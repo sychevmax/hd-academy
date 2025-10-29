@@ -1,0 +1,459 @@
+# ============================================================================
+# GLOSSARY PLATFORM - COMPREHENSIVE .gitignore FOR MONOREPO
+# ============================================================================
+
+# ============================================================================
+# IDE & EDITOR
+# ============================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.env.local
+.env.*.local
+*.iml
+*.iws
+*.ipr
+
+# ============================================================================
+# BUILD & ARTIFACTS
+# ============================================================================
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Node/npm
+node_modules/
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+pnpm-lock.yaml
+dist/
+build/
+.next/
+out/
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================================================
+# DOCKER
+# ============================================================================
+
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# ============================================================================
+# AZURE & CLOUD
+# ============================================================================
+
+# Azure artifacts
+.azure/
+azure-pipelines.yml
+*.publishsettings
+*.azurewebsites.net
+
+# Local settings
+local.settings.json
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+terraform.tfvars.json
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf.json
+override.tf
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Bicep
+*.bicepparam
+
+# ============================================================================
+# LOGS & TEMPORARY FILES
+# ============================================================================
+
+*.log
+logs/
+*.log*
+temp/
+tmp/
+*.tmp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================================================
+# DATABASE
+# ============================================================================
+
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+*.accdb
+.localdb/
+
+# SQL Server
+*.bak
+*.mdf
+*.ldf
+*.log
+
+# ============================================================================
+# ENVIRONMENT VARIABLES
+# ============================================================================
+
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.example.bak
+
+# Keep .env.example as template
+!.env.example
+!.env.*.example
+!.env.sample
+
+# ============================================================================
+# CREDENTIALS & SENSITIVE DATA
+# ============================================================================
+
+*.key
+*.pem
+*.pub
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+secrets/
+.secrets/
+credentials/
+**/credentials/**
+**/secrets/**
+!**/credentials/.gitkeep
+!**/secrets/.gitkeep
+
+# ============================================================================
+# OS SPECIFIC
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.~lock.*
+
+# ============================================================================
+# FRONTEND SPECIFIC (React/Vite)
+# ============================================================================
+
+frontend/react-app/dist/
+frontend/react-app/build/
+frontend/react-app/.env
+frontend/react-app/.env.local
+frontend/react-app/.env.*.local
+frontend/react-app/npm-debug.log*
+frontend/react-app/yarn-debug.log*
+frontend/react-app/yarn-error.log*
+frontend/react-app/.next/
+frontend/react-app/out/
+frontend/react-app/.parcel-cache
+frontend/react-app/.cache
+
+# ============================================================================
+# BACKEND SPECIFIC (Java/Spring Boot)
+# ============================================================================
+
+backend/java-app/target/
+backend/java-app/.gradle/
+backend/java-app/build/
+backend/java-app/bin/
+backend/java-app/.classpath
+backend/java-app/.project
+backend/java-app/.settings/
+backend/java-app/derby.log
+
+# ============================================================================
+# DATA PIPELINE SPECIFIC (Python)
+# ============================================================================
+
+data-pipeline/python/venv/
+data-pipeline/python/.venv/
+data-pipeline/python/__pycache__/
+data-pipeline/python/*.pyc
+data-pipeline/python/.pytest_cache/
+data-pipeline/python/.coverage
+data-pipeline/python/htmlcov/
+data-pipeline/python/notebooks/.ipynb_checkpoints/
+data-pipeline/python/data/raw/
+data-pipeline/python/data/processed/
+data-pipeline/python/models/
+data-pipeline/python/outputs/
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+
+docs/node_modules/
+docs/build/
+docs/_build/
+docs/.doctrees/
+site/
+
+# ============================================================================
+# BUILD ARTIFACTS & CACHES
+# ============================================================================
+
+.cache/
+.eslintcache
+.stylelintcache
+.turbo/
+dist-ssr/
+*.local
+
+# ============================================================================
+# TESTING
+# ============================================================================
+
+coverage/
+.nyc_output/
+junit.xml
+test-results/
+.mocha_output/
+
+# ============================================================================
+# MISC
+# ============================================================================
+
+.git/
+.gitkeep
+!.gitkeep
+
+# Package manager lock files (optional - comment out if you want to lock versions)
+# package-lock.json
+# yarn.lock
+# pom.xml.lock
+
+# Miscellaneous files
+.tern-port
+.vuepress/dist
+.nuxt
+.cache
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+dist-ssr/
+*.sw?
+
+# ============================================================================
+# IDE SPECIFIC
+# ============================================================================
+
+# VS Code - allow settings files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+Session.vim
+.exrc
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ============================================================================
+# CI/CD ARTIFACTS
+# ============================================================================
+
+.github/workflows/artifacts/
+.github/cache/
+actions-runner/_work/
+
+# ============================================================================
+# DEPLOYMENT ARTIFACTS
+# ============================================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# ============================================================================
+# WHITELIST EXCEPTIONS - IMPORTANT FILES TO TRACK
+# ============================================================================
+
+# Do not ignore these important files
+!.gitkeep
+!.gitattributes
+!.github/
+!.dockerignore
+!infrastructure/
+!scripts/
+!docs/
+!*.example
+!README.md
+!LICENSE
+!CONTRIBUTING.md
