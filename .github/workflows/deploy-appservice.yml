@@ -1,0 +1,64 @@
+name: CI/CD to Azure App Service
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: {}
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      FRONTEND_DIR: frontend/hda-front
+      BACKEND_DIR: backend/hda-back
+      JAVA_VERSION: "21"           # or 17
+      NODE_VERSION: "18"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Build frontend
+        working-directory: ${{ env.FRONTEND_DIR }}
+        run: |
+          npm ci
+          npm run build
+
+      # Copy built UI into the backend’s static resources
+      - name: Copy UI build into backend static
+        run: |
+          rm -rf ${{ env.BACKEND_DIR }}/src/main/resources/static
+          mkdir -p ${{ env.BACKEND_DIR }}/src/main/resources/static
+          cp -R ${{ env.FRONTEND_DIR }}/build/* ${{ env.BACKEND_DIR }}/src/main/resources/static/
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ env.JAVA_VERSION }}
+          cache: maven
+
+      - name: Build backend (package jar)
+        working-directory: ${{ env.BACKEND_DIR }}
+        run: ./mvnw -B -DskipTests package
+
+      # Find the built JAR path (Spring Boot repackage outputs under target/*.jar)
+      - name: Locate artifact
+        id: artifact
+        working-directory: ${{ env.BACKEND_DIR }}
+        run: |
+          JAR=$(ls target/*-SNAPSHOT.jar 2>/dev/null || ls target/*.jar)
+          echo "jar=$JAR" >> $GITHUB_OUTPUT
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: hdacademy-web                  # <-- change to your app name
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ${{ env.BACKEND_DIR }}/${{ steps.artifact.outputs.jar }}
