@@ -12,7 +12,7 @@ export default function TermCard({ term, abbreviation, definition, category, syn
   const panelId = useId();
 
   return (
-    <article className={`term-card ${expanded ? 'expanded' : ''}`} role="article">
+    <article className={`term-card ${expanded ? 'expanded' : ''}`}>
       <header className="term-header">
         <h3 className="term-title">{term}
           {abbreviation && <span className="abbr">{abbreviation}</span>}
