@@ -1,44 +1,73 @@
-/* Layout styles for collapsible sidebar */
+/* Light theme layout styles for collapsible sidebar (HD Academy brand) */
 :root {
-  --bg: #0b1020;
-  --panel: #141a32;
-  --panel-2: #10162a;
-  --text: #e7e9ee;
-  --muted: #a9b0c7;
-  --accent: #4f7cff;
-  --accent-2: #35c4a1;
-  --border: #232a49;
-  --card: #0e1428;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f7f9fc;
+  --text: #011831;            /* dark blue */
+  --muted: #5b6b7b;           /* neutral text */
+  --border: #e3e8ef;          /* light border */
+  --primary: #0069cc;         /* blue */
+  --accent: rgba(37, 150, 190, 1); /* company accent */
+  --dark-blue: #011831;       /* brand dark */
+  --shadow: 0 8px 24px rgba(1, 24, 49, 0.08);
+  --ring: 0 0 0 3px rgba(0, 105, 204, 0.25);
 }
 
 html, body, #root { height: 100%; }
 body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
 
-.layout { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
-.layout.collapsed { grid-template-columns: 64px 1fr; }
+/* Full-viewport layout; main content scrolls independently */
+.layout { display: grid; grid-template-columns: 280px 1fr; height: 100vh; }
+.layout.collapsed { grid-template-columns: 0 1fr; }
 
-.sidebar { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border-right: 1px solid var(--border); display: flex; flex-direction: column; }
-.sidebar-header { display: flex; align-items: center; gap: 10px; padding: 12px 12px; border-bottom: 1px solid var(--border); }
-.collapse-btn { background: transparent; border: 1px solid var(--border); color: var(--muted); border-radius: 8px; padding: 6px 8px; cursor: pointer; }
-.brand { font-weight: 700; letter-spacing: 0.3px; color: var(--text); }
+/* Sidebar styles: brand blue background; header on white */
+.sidebar { background: var(--primary); color: #ffffff; border-right: 1px solid rgba(255,255,255,0.15); display: flex; flex-direction: column; height: 100vh; position: sticky; top: 0; align-self: start; }
+.sidebar a, .sidebar button, .sidebar .section-title, .sidebar li { color: #e8f2ff; }
+.sidebar-header { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px 56px 10px 12px; background: #ffffff; color: var(--dark-blue); border-bottom: 1px solid var(--border); }
 
-.layout.collapsed .brand, .layout.collapsed .sidebar .section-title, .layout.collapsed .sidebar .categories, .layout.collapsed .sidebar ul:not(.categories) { display: none; }
+/* Full-width logo under the collapse control */
+.brand-logo-wide { display: block; width: 100%; height: auto; max-height: 72px; object-fit: contain; margin-top: 6px; }
 
+/* Bigger heading under the logo, full width */
+.brand-heading { width: 100%; text-align: center; font-weight: 800; color: var(--dark-blue); font-size: 20px; line-height: 1.2; letter-spacing: 0.01em; margin: 6px 0 6px; }
+
+/* Prominent icon-only collapse button at top-right of header */
+.collapse-btn { position: absolute; top: 10px; right: 10px; background: var(--primary); border: 0; color: #ffffff; border-radius: 10px; padding: 10px 12px; cursor: pointer; font-weight: 800; font-size: 16px; box-shadow: var(--shadow); }
+.collapse-btn:hover { filter: brightness(1.05); }
+.collapse-btn:focus { outline: none; box-shadow: var(--ring); }
+
+/* Hide the internal collapse button when sidebar is collapsed */
+.layout.collapsed .collapse-btn { display: none; }
+
+/* Remove old brand text handling */
+.brand { display: none; }
+
+/* Collapsed state completely hides the sidebar content area */
+.layout.collapsed .sidebar { overflow: hidden; }
+
+/* Sidebar inner content scrolls only if it overflows, sidebar stays fixed height */
 .sidebar-content { padding: 12px; overflow: auto; flex: 1; }
-.sidebar-footer { padding: 10px 12px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--border); }
+.sidebar-footer { padding: 10px 12px; font-size: 12px; color: #e0ecff; border-top: 1px solid rgba(255,255,255,0.12); }
 
-.content { padding: 24px; overflow: auto; }
+/* Main content area scrolls independently of the sidebar */
+.content { padding: 24px; overflow: auto; background: var(--surface); height: 100vh; }
 
-/* Sidebar menu */
+/* Sidebar menu on blue background */
 .sidebar-menu ul { list-style: none; padding: 0; margin: 8px 0 16px; }
-.sidebar-menu li { color: var(--muted); padding: 6px 4px; }
-.sidebar-menu li.active { color: var(--text); font-weight: 600; }
-.sidebar-menu li.disabled { opacity: 0.45; }
-.sidebar-menu .section-title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 8px; }
-.sidebar-menu .link { background: none; border: none; color: var(--muted); cursor: pointer; padding: 0; font: inherit; }
-.sidebar-menu .link.active { color: var(--accent); font-weight: 600; }
-.small-error { color: #ff8080; font-size: 12px; }
+.sidebar-menu li { color: #e8f2ff; padding: 6px 4px; }
+.sidebar-menu li.active { color: #ffffff; font-weight: 600; }
+.sidebar-menu li.disabled { opacity: 0.6; }
+.sidebar-menu .section-title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #cfe3ff; margin-top: 8px; }
+.sidebar-menu .link { background: none; border: none; color: #e8f2ff; cursor: pointer; padding: 0; font: inherit; }
+.sidebar-menu .link:hover { color: #ffffff; }
+.sidebar-menu .link.active { color: #ffffff; font-weight: 700; }
+.small-error { color: #ffd1d1; font-size: 12px; }
+
+/* Floating expand button visible only when collapsed (icon-only, high contrast) */
+.expand-toggle { position: fixed; top: 10px; left: 10px; z-index: 1000; background: var(--primary); color: #ffffff; border: 0; border-radius: 10px; padding: 10px 12px; cursor: pointer; box-shadow: var(--shadow); font-weight: 800; font-size: 16px; }
+.expand-toggle:focus { outline: none; box-shadow: var(--ring); }
+.layout:not(.collapsed) .expand-toggle { display: none; }
 
 @media (max-width: 880px) {
-  .layout { grid-template-columns: 64px 1fr; }
+  .layout { grid-template-columns: 0 1fr; }
 }
