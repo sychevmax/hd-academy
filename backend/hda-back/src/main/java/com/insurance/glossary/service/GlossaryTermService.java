@@ -5,6 +5,7 @@ import com.insurance.glossary.entity.GlossaryTerm;
 import com.insurance.glossary.exception.TermNotFoundException;
 import com.insurance.glossary.repository.GlossaryTermRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -61,7 +62,7 @@ public class GlossaryTermService {
      * Get all terms
      */
     public List<GlossaryTermDTO> getAllTerms() {
-        return repository.findAll()
+        return repository.findAll(Sort.by("term").ascending())
                 .stream()
                 .map(GlossaryTermDTO::fromEntity)
                 .collect(Collectors.toList());

@@ -20,13 +20,7 @@ public interface GlossaryTermRepository extends JpaRepository<GlossaryTerm, Long
            OR LOWER(definition) LIKE LOWER(CONCAT('%', :searchText, '%'))
            OR LOWER(abbreviation) LIKE LOWER(CONCAT('%', :searchText, '%'))
            OR LOWER(synonyms) LIKE LOWER(CONCAT('%', :searchText, '%'))
-        ORDER BY 
-            CASE 
-                WHEN LOWER(term) LIKE LOWER(CONCAT(:searchText, '%')) THEN 1
-                WHEN LOWER(term) LIKE LOWER(CONCAT('%', :searchText, '%')) THEN 2
-                ELSE 3 
-            END,
-            term
+        ORDER BY term ASC
         """, nativeQuery = true)
     List<GlossaryTerm> fullTextSearch(@Param("searchText") String searchText);
 
