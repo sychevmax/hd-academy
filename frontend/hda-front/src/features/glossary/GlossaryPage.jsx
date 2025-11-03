@@ -94,6 +94,8 @@ export default function GlossaryPage({ selectedCategory }) {
             category={t.category}
             synonyms={t.synonyms}
             lastUpdated={t.last_updated}
+            examples={t.examples}
+            relatedTerms={t.related_terms}
           />
         ))}
       </div>

@@ -24,6 +24,10 @@
 
 .term-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 14px; box-shadow: var(--shadow); }
 .term-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.term-actions { display: flex; align-items: center; gap: 8px; }
+.term-toggle { background: #fff; border: 1px solid var(--border); color: var(--dark-blue); border-radius: 10px; padding: 4px 8px; cursor: pointer; font-weight: 800; box-shadow: none; }
+.term-toggle:hover { background: var(--surface-2); }
+.term-toggle:focus { outline: none; box-shadow: var(--ring); }
 .term-title { margin: 0; font-size: 18px; color: var(--dark-blue); }
 .abbr { margin-left: 8px; color: var(--muted); font-weight: 500; font-size: 14px; }
 .badge.category { background: rgba(0,105,204,0.08); border: 1px solid rgba(0,105,204,0.25); color: var(--primary); padding: 2px 8px; border-radius: 999px; font-size: 12px; white-space: nowrap; }
@@ -31,8 +35,24 @@
 .synonyms { color: var(--muted); font-size: 14px; }
 .meta { margin-top: 10px; color: #708496; font-size: 12px; }
 
+/* Expanded content */
+.term-card.expanded { border-color: rgba(0,105,204,0.35); }
+.term-extra { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); background: #fff; border-radius: 0 0 12px 12px; }
+.examples .extra-title,
+.related .extra-title { font-weight: 700; color: var(--dark-blue); font-size: 14px; margin-bottom: 6px; }
+.examples ul { margin: 0; padding-left: 18px; color: var(--text); }
+.related-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.related-chip { background: rgba(0,105,204,0.08); border: 1px solid rgba(0,105,204,0.25); color: var(--primary); padding: 2px 8px; border-radius: 999px; font-size: 12px; }
+
 .load-more-wrap { display: flex; align-items: center; gap: 12px; justify-content: center; margin: 18px 0; }
 .load-more { background: var(--primary); border: 1px solid var(--primary); color: #fff; padding: 10px 16px; border-radius: 12px; cursor: pointer; font-weight: 600; }
 .load-more:hover { filter: brightness(1.05); }
 .load-more:focus { outline: none; box-shadow: var(--ring); }
 .count { color: var(--muted); font-size: 14px; }
+
+
+/* Footer area for compact, centered expand control */
+.term-footer { display: flex; justify-content: center; margin-top: 2px; margin-bottom: 0; }
+.term-footer .term-toggle { background: transparent; border: none; color: var(--muted); padding: 1px 2px; cursor: pointer; font-weight: 800; font-size: 22px; line-height: 1; }
+.term-footer .term-toggle:hover { color: var(--dark-blue); }
+.term-footer .term-toggle:focus { outline: none; box-shadow: var(--ring); border-radius: 6px; }
