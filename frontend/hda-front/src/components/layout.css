@@ -1,0 +1,44 @@
+/* Layout styles for collapsible sidebar */
+:root {
+  --bg: #0b1020;
+  --panel: #141a32;
+  --panel-2: #10162a;
+  --text: #e7e9ee;
+  --muted: #a9b0c7;
+  --accent: #4f7cff;
+  --accent-2: #35c4a1;
+  --border: #232a49;
+  --card: #0e1428;
+}
+
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+.layout { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
+.layout.collapsed { grid-template-columns: 64px 1fr; }
+
+.sidebar { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border-right: 1px solid var(--border); display: flex; flex-direction: column; }
+.sidebar-header { display: flex; align-items: center; gap: 10px; padding: 12px 12px; border-bottom: 1px solid var(--border); }
+.collapse-btn { background: transparent; border: 1px solid var(--border); color: var(--muted); border-radius: 8px; padding: 6px 8px; cursor: pointer; }
+.brand { font-weight: 700; letter-spacing: 0.3px; color: var(--text); }
+
+.layout.collapsed .brand, .layout.collapsed .sidebar .section-title, .layout.collapsed .sidebar .categories, .layout.collapsed .sidebar ul:not(.categories) { display: none; }
+
+.sidebar-content { padding: 12px; overflow: auto; flex: 1; }
+.sidebar-footer { padding: 10px 12px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--border); }
+
+.content { padding: 24px; overflow: auto; }
+
+/* Sidebar menu */
+.sidebar-menu ul { list-style: none; padding: 0; margin: 8px 0 16px; }
+.sidebar-menu li { color: var(--muted); padding: 6px 4px; }
+.sidebar-menu li.active { color: var(--text); font-weight: 600; }
+.sidebar-menu li.disabled { opacity: 0.45; }
+.sidebar-menu .section-title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 8px; }
+.sidebar-menu .link { background: none; border: none; color: var(--muted); cursor: pointer; padding: 0; font: inherit; }
+.sidebar-menu .link.active { color: var(--accent); font-weight: 600; }
+.small-error { color: #ff8080; font-size: 12px; }
+
+@media (max-width: 880px) {
+  .layout { grid-template-columns: 64px 1fr; }
+}
