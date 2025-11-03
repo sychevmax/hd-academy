@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# HD Academy – Insurance Educational Portal (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern React UI for the Insurance Glossary feature of the HD Academy portal. The app provides:
+- Collapsible left sidebar with space for future features
+- Glossary list with client-side paging (Load more)
+- Debounced full‑text search
+- Category filter
+- Clean card layout with UK date formatting
 
-## Available Scripts
+Backend API (served by your Spring Boot app) follows this OpenAPI spec (summary):
+- `GET /api/v1/glossary` – list all terms
+- `GET /api/v1/glossary/{id}` – get a term by id
+- `GET /api/v1/glossary/search?q=...` – full‑text search
+- `GET /api/v1/glossary/category/{category}` – terms by category
+- `GET /api/v1/glossary/categories` – list categories
 
-In the project directory, you can run:
+The frontend calls these endpoints relative to the same origin (no hardcoded host), so local dev uses a small Node reverse proxy to keep everything under `http://localhost:8080`.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
+- Node.js 18+ and npm
+- Java 17+ and Maven Wrapper for the backend project (Spring Boot)
+- macOS/Windows/Linux supported. On macOS Big Sur you do NOT need Docker/Caddy; we use a Node proxy.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Backend path (expected by defaults): `../../backend/hda-back` relative to this folder. You can override via `.env`.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Quick start (Dev / HMR on http://localhost:8080)
+This flow runs three processes: React (3000), Spring (8081), and a Node reverse proxy (8080).
 
-### `npm run build`
+Option A — One command (Makefile)
+```
+cd frontend/hda-front
+make dev
+```
+- Proxy: http://localhost:8080 (single origin used by the browser)
+- UI (CRA HMR): http://localhost:3000
+- API (Spring Boot): http://localhost:8081
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Option B — Manual (three terminals)
+1. UI (HMR)
+```
+cd frontend/hda-front
+npm install   # first time only
+npm start     # runs on :3000
+```
+2. Backend (Spring)
+```
+cd ../../backend/hda-back
+./mvnw spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
+```
+3. Reverse proxy (keeps browser on :8080)
+```
+cd frontend/hda-front
+npm run proxy   # starts dev-proxy.js on :8080
+```
+Open http://localhost:8080
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Environment variables (optional)
+- `PORT_PROXY` (default `8080`)
+- `PORT_SPRING` (default `8081`)
+- `PORT_UI` (default `3000`)
+- `API_TARGET` (default `http://localhost:8081`)
+- `UI_TARGET` (default `http://localhost:3000`)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a `.env` by copying `.env.example` to override ports/paths for your machine.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Scripts
+- `npm start` – CRA dev server on port 3000 (HMR)
+- `npm run proxy` – Node reverse proxy on port 8080 (routes `/api/*` to Spring 8081, everything else to CRA 3000; supports WebSockets for HMR)
+- `npm run build` – Production build to `build/`
+- `npm test` – Jest tests (CRA default)
+- `make dev` – Convenience target that starts proxy, UI, and Spring together
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Configuration
+- API base path is hardcoded in the UI as `'/api/v1/glossary'` inside `src/api/glossaryApi.js`.
+- The dev proxy ensures same‑origin requests: the browser stays on `http://localhost:8080`, while the proxy forwards:
+  - `/api/*` → `http://localhost:8081`
+  - everything else → `http://localhost:3000`
+- Edit `dev-proxy.js` if you need different targets.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### .env variables
+See `.env.example` for these keys (all optional):
+```
+FRONTEND_DIR=.
+BACKEND_DIR=../../backend/hda-back
+PORT_PROXY=8080
+PORT_SPRING=8081
+PORT_UI=3000
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Production-like run (optional)
+You can serve the built React app from Spring Boot on port 8080. This requires your backend to be configured to serve static files and route non‑`/api/**` paths to `index.html`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Typical steps:
+1) Build UI in this folder:
+```
+npm run build
+```
+2) Copy `build/` into your Spring Boot `src/main/resources/static/` and configure an SPA fallback (WebMvcConfigurer).
+3) Start Spring on 8080 and open http://localhost:8080
 
-### Code Splitting
+Note: The provided `Makefile` includes a `serve-ui` target, but it assumes your backend is already configured to serve static assets from `resources/static`. Adjust as needed in your backend project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## App structure (high‑level)
+- `src/components/Layout.jsx` – app shell with collapsible sidebar
+- `src/components/SidebarMenu.jsx` – features list and category filter (fetches `/api/v1/glossary/categories`)
+- `src/features/glossary/GlossaryPage.jsx` – loads terms (all/category), debounced search, paging via "Load more"
+- `src/features/glossary/TermCard.jsx` – card UI per term (UK date formatting)
+- `src/api/glossaryApi.js` – thin wrapper around backend endpoints
+- `dev-proxy.js` – Node reverse proxy for local dev (single origin)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Troubleshooting
+- Port already in use
+  - Change `PORT_PROXY`, `PORT_SPRING`, or `PORT_UI` in `.env` (and restart).
+- Proxy works but `/api/...` returns 404/ECONNREFUSED
+  - Ensure Spring is running on the correct port and that your controllers are under `/api/**`.
+- HMR not updating
+  - Make sure `npm start` is running on 3000. The proxy has `ws` enabled for WebSocket upgrades.
+- Big Sur (macOS 11)
+  - This setup uses only Node/Java; no Docker/Caddy required.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+Apache-2.0 (see backend license if different).
