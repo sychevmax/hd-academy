@@ -18,13 +18,19 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-san
 html { overscroll-behavior: none; }
 
 /* Full-viewport layout; main content scrolls independently */
-.layout { display: grid; grid-template-columns: 280px 1fr; height: 100vh; }
-.layout.collapsed { grid-template-columns: 0 1fr; }
+.layout { display: grid; grid-template-columns: auto 1fr; height: 100vh; }
+/* Desktop collapse animates sidebar width instead of grid columns */
 
 /* Sidebar styles: brand blue background; header on white */
 .sidebar { background: var(--primary); color: #ffffff; border-right: 1px solid rgba(255,255,255,0.15); display: flex; flex-direction: column; height: 100vh; position: sticky; top: 0; align-self: start; }
 .sidebar a, .sidebar button, .sidebar .section-title, .sidebar li { color: #e8f2ff; }
 .sidebar-header { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px 56px 10px 12px; background: #ffffff; color: var(--dark-blue); border-bottom: 1px solid var(--border); }
+
+/* Desktop (≥881px): animate sidebar width on collapse/expand */
+@media (min-width: 881px) {
+  .sidebar { width: 280px; transition: width 220ms ease; overflow: hidden; }
+  .layout.collapsed .sidebar { width: 0; pointer-events: none; }
+}
 
 /* Full-width logo under the collapse control */
 .brand-logo-wide { display: block; width: 100%; height: auto; max-height: 72px; object-fit: contain; margin-top: 6px; }
@@ -53,8 +59,10 @@ html { overscroll-behavior: none; }
 /* Main content area scrolls independently of the sidebar */
 .content { padding: 24px; padding-bottom: calc(24px + 96px + env(safe-area-inset-bottom)); overflow: auto; background: var(--surface); height: 100vh; overscroll-behavior-y: contain; -webkit-overflow-scrolling: touch; }
 
-/* Avoid overlap between expand button and content on desktop/mobile when collapsed */
-.layout.collapsed .content { padding-left: 72px; }
+/* Avoid overlap between expand button and content on desktop when collapsed */
+@media (min-width: 881px) {
+  .layout.collapsed .content { padding-left: 72px; }
+}
 
 /* Sidebar menu on blue background */
 .sidebar-menu ul { list-style: none; padding: 0; margin: 8px 0 16px; }
@@ -72,14 +80,20 @@ html { overscroll-behavior: none; }
 .expand-toggle:focus { outline: none; box-shadow: var(--ring); }
 .layout:not(.collapsed) .expand-toggle { display: none; }
 
-/* Backdrop for mobile drawer */
-.backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 1100; display: none; }
+/* Backdrop for mobile drawer (fades in/out) */
+.backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 1100; opacity: 0; pointer-events: none; transition: opacity 200ms ease; }
+/* Backdrop activation is limited to mobile in the media query below */
 
 @media (max-width: 880px) {
   /* Single-column content; sidebar becomes a drawer overlay */
   .layout { grid-template-columns: 1fr; }
-  .sidebar { position: fixed; top: 0; left: 0; width: 280px; height: 100vh; transform: translateX(-100%); transition: transform 180ms ease-out; z-index: 1150; }
-  .layout:not(.collapsed) .sidebar { transform: translateX(0); }
-  /* Show backdrop only when sidebar is open on mobile */
-  .layout:not(.collapsed) .backdrop { display: block; }
+  .layout.collapsed { grid-template-columns: 1fr; }
+  .sidebar { position: fixed; top: 0; left: 0; width: 280px; height: 100vh; transform: translateX(-100%); opacity: 0; transition: transform 220ms ease, opacity 220ms ease; z-index: 1150; }
+  /* When collapsed on mobile, disable interactions but keep opacity/transform for smooth animation */
+  .layout.collapsed .sidebar { pointer-events: none; }
+  .layout:not(.collapsed) .sidebar { transform: translateX(0); opacity: 1; pointer-events: auto; }
+  /* Show backdrop only when sidebar is open on mobile (activate opacity and interactions) */
+  .layout:not(.collapsed) .backdrop { display: block; opacity: 1; pointer-events: auto; }
+  /* Mobile: allow expand button to overlap; keep it near top-left so it stays above the search field on initial state */
+  .expand-toggle { top: 8px; left: 10px; }
 }

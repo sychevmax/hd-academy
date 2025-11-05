@@ -61,3 +61,12 @@
 .term-footer .term-toggle { background: transparent; border: none; color: var(--muted); padding: 1px 2px; cursor: pointer; font-weight: 800; font-size: 22px; line-height: 1; }
 .term-footer .term-toggle:hover { color: var(--dark-blue); }
 .term-footer .term-toggle:focus { outline: none; box-shadow: var(--ring); border-radius: 6px; }
+
+
+/* Mobile tweaks: ensure search bar sits below the floating expand button */
+@media (max-width: 880px) {
+  .glossary-toolbar {
+    /* Keep search input clear of the expand button at top-left */
+    margin-top: calc(56px + env(safe-area-inset-top, 0px));
+  }
+}
