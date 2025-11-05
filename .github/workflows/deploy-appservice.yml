@@ -55,6 +55,14 @@ jobs:
         run: |
           JAR=$(ls target/*-SNAPSHOT.jar 2>/dev/null || ls target/*.jar)
           echo "jar=$JAR" >> $GITHUB_OUTPUT
+      
+      # Log in to Azure
+      - name: 'Azure Login'
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
