@@ -7,7 +7,7 @@ function formatDate(iso) {
   return d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
 }
 
-export default function TermCard({ term, abbreviation, definition, category, synonyms, lastUpdated, examples, relatedTerms }) {
+export default function TermCard({ term, abbreviation, definition, category, synonyms, lastUpdated, examples }) {
   const [expanded, setExpanded] = useState(false);
   const panelId = useId();
 
@@ -40,16 +40,6 @@ export default function TermCard({ term, abbreviation, definition, category, syn
             </div>
           )}
 
-          {Array.isArray(relatedTerms) && relatedTerms.length > 0 && (
-            <div className="related">
-              <div className="extra-title">Related terms</div>
-              <div className="related-list">
-                {relatedTerms.map((r, i) => (
-                  <span key={i} className="related-chip">{r}</span>
-                ))}
-              </div>
-            </div>
-          )}
 
           {lastUpdated && (
             <footer className="meta">Last updated: {formatDate(lastUpdated)}</footer>

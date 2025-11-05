@@ -38,11 +38,8 @@
 /* Expanded content */
 .term-card.expanded { border-color: rgba(0,105,204,0.35); }
 .term-extra { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); background: #fff; border-radius: 0 0 12px 12px; }
-.examples .extra-title,
-.related .extra-title { font-weight: 700; color: var(--dark-blue); font-size: 14px; margin-bottom: 6px; }
+.examples .extra-title { font-weight: 700; color: var(--dark-blue); font-size: 14px; margin-bottom: 6px; }
 .examples ul { margin: 0; padding-left: 18px; color: var(--text); }
-.related-list { display: flex; flex-wrap: wrap; gap: 6px; }
-.related-chip { background: rgba(0,105,204,0.08); border: 1px solid rgba(0,105,204,0.25); color: var(--primary); padding: 2px 8px; border-radius: 999px; font-size: 12px; }
 
 .load-more-wrap { display: flex; align-items: center; gap: 12px; justify-content: center; margin: 24px 0 48px; }
 .load-more { background: var(--primary); border: 1px solid var(--primary); color: #fff; padding: 14px 20px; border-radius: 14px; cursor: pointer; font-weight: 700; font-size: 18px; min-height: 48px; }
