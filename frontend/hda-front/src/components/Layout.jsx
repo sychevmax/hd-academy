@@ -3,7 +3,8 @@ import './layout.css';
 import logo from '../logo.svg';
 
 export default function Layout({ sidebar, children }) {
-  const [collapsed, setCollapsed] = useState(false);
+  // Start collapsed on small screens to show content first
+  const [collapsed, setCollapsed] = useState(() => typeof window !== 'undefined' && window.innerWidth <= 880);
 
   return (
     <div className={`layout ${collapsed ? 'collapsed' : ''}`}>
@@ -16,6 +17,9 @@ export default function Layout({ sidebar, children }) {
       >
         »
       </button>
+
+      {/* Backdrop for mobile drawer; clicking it collapses the sidebar */}
+      <div className="backdrop" role="presentation" onClick={() => setCollapsed(true)} />
 
       <aside className="sidebar">
         <div className="sidebar-header">

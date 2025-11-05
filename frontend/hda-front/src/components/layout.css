@@ -14,7 +14,8 @@
 }
 
 html, body, #root { height: 100%; }
-body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; overflow: hidden; overscroll-behavior: none; }
+html { overscroll-behavior: none; }
 
 /* Full-viewport layout; main content scrolls independently */
 .layout { display: grid; grid-template-columns: 280px 1fr; height: 100vh; }
@@ -46,11 +47,14 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-san
 .layout.collapsed .sidebar { overflow: hidden; }
 
 /* Sidebar inner content scrolls only if it overflows, sidebar stays fixed height */
-.sidebar-content { padding: 12px; overflow: auto; flex: 1; }
+.sidebar-content { padding: 12px; overflow: auto; flex: 1; overscroll-behavior-y: contain; -webkit-overflow-scrolling: touch; }
 .sidebar-footer { padding: 10px 12px; font-size: 12px; color: #e0ecff; border-top: 1px solid rgba(255,255,255,0.12); }
 
 /* Main content area scrolls independently of the sidebar */
-.content { padding: 24px; overflow: auto; background: var(--surface); height: 100vh; }
+.content { padding: 24px; padding-bottom: calc(24px + 96px + env(safe-area-inset-bottom)); overflow: auto; background: var(--surface); height: 100vh; overscroll-behavior-y: contain; -webkit-overflow-scrolling: touch; }
+
+/* Avoid overlap between expand button and content on desktop/mobile when collapsed */
+.layout.collapsed .content { padding-left: 72px; }
 
 /* Sidebar menu on blue background */
 .sidebar-menu ul { list-style: none; padding: 0; margin: 8px 0 16px; }
@@ -64,10 +68,18 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-san
 .small-error { color: #ffd1d1; font-size: 12px; }
 
 /* Floating expand button visible only when collapsed (icon-only, high contrast) */
-.expand-toggle { position: fixed; top: 10px; left: 10px; z-index: 1000; background: var(--primary); color: #ffffff; border: 0; border-radius: 10px; padding: 10px 12px; cursor: pointer; box-shadow: var(--shadow); font-weight: 800; font-size: 16px; }
+.expand-toggle { position: fixed; top: 10px; left: 10px; z-index: 1200; background: var(--primary); color: #ffffff; border: 0; border-radius: 10px; padding: 10px 12px; cursor: pointer; box-shadow: var(--shadow); font-weight: 800; font-size: 16px; }
 .expand-toggle:focus { outline: none; box-shadow: var(--ring); }
 .layout:not(.collapsed) .expand-toggle { display: none; }
 
+/* Backdrop for mobile drawer */
+.backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 1100; display: none; }
+
 @media (max-width: 880px) {
-  .layout { grid-template-columns: 0 1fr; }
+  /* Single-column content; sidebar becomes a drawer overlay */
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: fixed; top: 0; left: 0; width: 280px; height: 100vh; transform: translateX(-100%); transition: transform 180ms ease-out; z-index: 1150; }
+  .layout:not(.collapsed) .sidebar { transform: translateX(0); }
+  /* Show backdrop only when sidebar is open on mobile */
+  .layout:not(.collapsed) .backdrop { display: block; }
 }

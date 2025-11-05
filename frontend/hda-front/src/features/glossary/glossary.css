@@ -44,11 +44,16 @@
 .related-list { display: flex; flex-wrap: wrap; gap: 6px; }
 .related-chip { background: rgba(0,105,204,0.08); border: 1px solid rgba(0,105,204,0.25); color: var(--primary); padding: 2px 8px; border-radius: 999px; font-size: 12px; }
 
-.load-more-wrap { display: flex; align-items: center; gap: 12px; justify-content: center; margin: 18px 0; }
-.load-more { background: var(--primary); border: 1px solid var(--primary); color: #fff; padding: 10px 16px; border-radius: 12px; cursor: pointer; font-weight: 600; }
+.load-more-wrap { display: flex; align-items: center; gap: 12px; justify-content: center; margin: 24px 0 48px; }
+.load-more { background: var(--primary); border: 1px solid var(--primary); color: #fff; padding: 14px 20px; border-radius: 14px; cursor: pointer; font-weight: 700; font-size: 18px; min-height: 48px; }
 .load-more:hover { filter: brightness(1.05); }
-.load-more:focus { outline: none; box-shadow: var(--ring); }
+.load-more:focus, .load-more:focus-visible { outline: none; box-shadow: var(--ring); }
 .count { color: var(--muted); font-size: 14px; }
+
+@media (max-width: 800px) {
+  .load-more-wrap { flex-direction: column; gap: 8px; }
+  .load-more { width: 100%; }
+}
 
 
 /* Footer area for compact, centered expand control */
