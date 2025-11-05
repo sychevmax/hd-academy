@@ -21,12 +21,9 @@ public class SpaWebConfig implements WebMvcConfigurer {
         // Serve SPA entry for root
         registry.addViewController("/").setViewName("forward:/index.html");
 
-        // Fallback for top-level paths that are not API or doc endpoints
-        registry.addViewController("/{spring:(?!api|v3|swagger-ui|actuator|error).*}")
-                .setViewName("forward:/index.html");
-
-        // Fallback for nested paths as well (e.g., /dashboard/settings)
-        registry.addViewController("/**/{spring:(?!api|v3|swagger-ui|actuator).*}")
-                .setViewName("forward:/index.html");
+        // Spring 6 PathPatternParser-compatible catch-all for client-side routes
+        // More specific mappings (REST controllers, actuator, swagger, static resources)
+        // will match before this fallback.
+        registry.addViewController("/{*path}").setViewName("forward:/index.html");
     }
 }
