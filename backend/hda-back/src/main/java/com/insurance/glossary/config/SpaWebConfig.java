@@ -18,12 +18,8 @@ public class SpaWebConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        // Serve SPA entry for root
+        // Serve SPA entry for root only; all other unmatched routes will be handled
+        // by SpaErrorViewResolver (404 -> forward:/index.html).
         registry.addViewController("/").setViewName("forward:/index.html");
-
-        // Spring 6 PathPatternParser-compatible catch-all for client-side routes
-        // More specific mappings (REST controllers, actuator, swagger, static resources)
-        // will match before this fallback.
-        registry.addViewController("/{*path}").setViewName("forward:/index.html");
     }
 }
