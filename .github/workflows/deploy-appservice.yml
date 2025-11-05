@@ -9,6 +9,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      id-token: write
+      contents: read
+
     env:
       FRONTEND_DIR: frontend/hda-front
       BACKEND_DIR: backend/hda-back
