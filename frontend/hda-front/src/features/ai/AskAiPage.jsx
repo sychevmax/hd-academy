@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import aiApi from '../../api/aiApi';
 
 export default function AskAiPage() {
@@ -58,7 +60,17 @@ export default function AskAiPage() {
           {response.answer ? (
             <>
               <h2>Answer</h2>
-              <div style={{ whiteSpace: 'pre-wrap', lineHeight: 1.5 }}>{response.answer}</div>
+              <div className="markdown-body" style={{ lineHeight: 1.6 }}>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}
+                  components={{
+                    a: ({node, ...props}) => (
+                      <a {...props} target="_blank" rel="noopener noreferrer" />
+                    )
+                  }}
+                >
+                  {response.answer}
+                </ReactMarkdown>
+              </div>
             </>
           ) : null}
 
