@@ -16,12 +16,24 @@ code {
 
 /* Ask AI redesigned styles (namespaced) */
 .ai-page {
+  /* Viewport fallbacks for mobile browser UI chrome */
   min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
   background: #ffffff;
+  /* Prevent iOS auto-zoom adjustments */
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Top-align content on small screens to avoid cut off when keyboard shows */
+@media (max-width: 767px) {
+  .ai-page { align-items: stretch; justify-content: flex-start; }
+  .ai-container { margin-top: 8px; }
 }
 
 .ai-container {
@@ -105,6 +117,8 @@ code {
   outline: none;
   color: #1f2937;
   background: #fff;
+  font-size: 16px; /* prevent iOS Safari zoom on focus */
+  line-height: 1.5;
   transition: box-shadow .2s ease, border-color .2s ease, transform .06s ease;
 }
 .ai-textarea::placeholder { color: #9ca3af; }
@@ -118,6 +132,7 @@ code {
   gap: 8px;
   width: 100%;
   font-weight: 600;
+  font-size: 16px; /* avoid tap-to-zoom on iOS */
   padding: 14px 18px;
   border-radius: 16px;
   border: 2px solid transparent;
@@ -181,8 +196,11 @@ code {
   border: 2px solid #e5e7eb;
   border-radius: 16px;
   padding: 12px;
-  max-height: 480px;
+  /* responsive max height to prevent over-zoomed layout + cuts on mobile */
+  max-height: clamp(40vh, 480px, 70vh);
   overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 .ai-pre {

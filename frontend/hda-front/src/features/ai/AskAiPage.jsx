@@ -86,6 +86,8 @@ export default function AskAiPage() {
                     placeholder="Ask me anything about insurance..."
                     disabled={loading}
                     className="ai-textarea"
+                    inputMode="text"
+                    enterKeyHint="send"
                   />
                 </div>
 
