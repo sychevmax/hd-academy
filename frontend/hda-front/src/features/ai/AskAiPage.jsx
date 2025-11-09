@@ -69,7 +69,7 @@ export default function AskAiPage() {
       <div className="ai-container">
         <header className="ai-header animate-fade-in">
           <h1 className="ai-title">Ask AI</h1>
-          <p className="ai-subtitle">Get an instant answer to your question</p>
+          <p className="ai-subtitle">Get an answer to your question</p>
         </header>
 
         <main className="ai-card">
@@ -83,7 +83,7 @@ export default function AskAiPage() {
                     rows={6}
                     value={question}
                     onChange={(e) => setQuestion(e.target.value)}
-                    placeholder="Ask me anything..."
+                    placeholder="Ask me anything about insurance..."
                     disabled={loading}
                     className="ai-textarea"
                   />
