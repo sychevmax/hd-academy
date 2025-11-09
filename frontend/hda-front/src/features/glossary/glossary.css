@@ -1,5 +1,5 @@
 .glossary-page { width: 100%; max-width: none; margin: 0; }
-.glossary-toolbar { display: block; margin-bottom: 16px; }
+.glossary-toolbar { display: block; margin: 8px 0 16px; }
 .search-input {
   width: 100%;
   max-width: none;            /* span full container width */
@@ -65,5 +65,13 @@
   .glossary-toolbar {
     /* Keep search input clear of the expand button at top-left */
     margin-top: calc(56px + env(safe-area-inset-top, 0px));
+  }
+}
+
+
+/* Desktop collapsed layout: add top margin so search doesn’t sit under the fixed expand button */
+@media (min-width: 881px) {
+  .layout.collapsed .content .glossary-toolbar {
+    margin-top: 24px;
   }
 }
