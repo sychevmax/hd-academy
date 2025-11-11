@@ -16,8 +16,7 @@ public interface GlossaryTermRepository extends JpaRepository<GlossaryTerm, Long
      */
     @Query(value = """
         SELECT * FROM glossary_terms 
-        WHERE LOWER(term) LIKE LOWER(CONCAT('%', :searchText, '%'))
-           OR LOWER(definition) LIKE LOWER(CONCAT('%', :searchText, '%'))
+        WHERE LOWER(term) LIKE LOWER(CONCAT('%', :searchText, '%'))           
            OR LOWER(abbreviation) LIKE LOWER(CONCAT('%', :searchText, '%'))
            OR LOWER(synonyms) LIKE LOWER(CONCAT('%', :searchText, '%'))
         ORDER BY term ASC
