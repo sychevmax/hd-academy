@@ -33,19 +33,19 @@ public class GlossaryTerm {
     @Column(length = 30)
     private String abbreviation;
 
-    @Column(name = "synonyms", columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "synonyms", columnDefinition = "TEXT")
     private String synonyms;
 
-    @Column(nullable = false, columnDefinition = "NVARCHAR(MAX)")
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String definition;
 
-    @Column(name = "examples", columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "examples", columnDefinition = "TEXT")
     private String examples;
 
     @Column(length = 30)
     private String category;
 
-    @Column(name = "related_terms", columnDefinition = "NVARCHAR(MAX)")
+    @Column(name = "related_terms", columnDefinition = "TEXT")
     private String relatedTerms;
 
     @Column(name = "last_updated")

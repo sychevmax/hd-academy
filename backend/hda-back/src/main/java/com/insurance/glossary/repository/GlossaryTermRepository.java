@@ -9,16 +9,16 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface GlossaryTermRepository extends JpaRepository<GlossaryTerm, Long> {
+public interface GlossaryTermRepository extends JpaRepository<GlossaryTerm, Integer> {
 
     /**
      * Full-text search for Azure SQL / SQL Server using CONTAINS or LIKE
      */
     @Query(value = """
         SELECT * FROM glossary_terms 
-        WHERE LOWER(term) LIKE LOWER(CONCAT('%', :searchText, '%'))           
-           OR LOWER(abbreviation) LIKE LOWER(CONCAT('%', :searchText, '%'))
-           OR LOWER(synonyms) LIKE LOWER(CONCAT('%', :searchText, '%'))
+        WHERE term ILIKE CONCAT('%', :searchText, '%')          
+           OR abbreviation ILIKE CONCAT('%', :searchText, '%')
+           OR synonyms ILIKE CONCAT('%', :searchText, '%')
         ORDER BY term ASC
         """, nativeQuery = true)
     List<GlossaryTerm> fullTextSearch(@Param("searchText") String searchText);

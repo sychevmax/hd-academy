@@ -31,7 +31,7 @@ public class GlossaryTermController {
     @GetMapping("/{id}")
     public ResponseEntity<GlossaryTermDTO> getTermById(
             @io.swagger.v3.oas.annotations.Parameter(description = "Term ID", required = true)
-            @PathVariable Long id) {
+            @PathVariable Integer id) {
         return ResponseEntity.ok(service.getById(id));
     }
 
