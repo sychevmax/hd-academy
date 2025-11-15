@@ -22,7 +22,7 @@ public class GlossaryTermService {
     /**
      * Get term by ID
      */
-    public GlossaryTermDTO getById(Long id) {
+    public GlossaryTermDTO getById(Integer id) {
         GlossaryTerm entity = repository.findById(id)
                 .orElseThrow(() -> new TermNotFoundException("Term with id " + id + " not found"));
         return GlossaryTermDTO.fromEntity(entity);
