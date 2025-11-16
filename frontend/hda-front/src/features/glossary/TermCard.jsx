@@ -12,7 +12,7 @@ export default function TermCard({ term, abbreviation, definition, category, syn
   const panelId = useId();
 
   return (
-    <article className={`term-card ${expanded ? 'expanded' : ''}`}>
+    <article className={`term-card ${expanded ? 'expanded' : ''}`} onClick={() => setExpanded(e => !e)}>
       <header className="term-header">
         <h3 className="term-title">{term}
           {abbreviation && <span className="abbr">{abbreviation}</span>}
@@ -48,17 +48,16 @@ export default function TermCard({ term, abbreviation, definition, category, syn
       )}
 
       <div className="term-footer">
-        <button
+        <div
           className="term-toggle"
           aria-expanded={expanded}
           aria-controls={panelId}
           aria-label={expanded ? 'Collapse details' : 'Expand details'}
-          onClick={() => setExpanded(e => !e)}
           title={expanded ? 'Collapse details' : 'Expand details'}
         >
           {/* Compact single arrow: down when collapsed, up when expanded */}
           {expanded ? '▴' : '▾'}
-        </button>
+        </div>
       </div>
     </article>
   );

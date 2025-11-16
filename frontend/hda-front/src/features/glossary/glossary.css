@@ -22,7 +22,7 @@
 .terms-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 @media (max-width: 800px) { .terms-grid { grid-template-columns: 1fr; } }
 
-.term-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 14px; box-shadow: var(--shadow); }
+.term-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 14px; box-shadow: var(--shadow); cursor: pointer; }
 .term-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
 .term-actions { display: flex; align-items: center; gap: 8px; }
 .term-toggle { background: #fff; border: 1px solid var(--border); color: var(--dark-blue); border-radius: 10px; padding: 4px 8px; cursor: pointer; font-weight: 800; box-shadow: none; }
@@ -55,7 +55,7 @@
 
 /* Footer area for compact, centered expand control */
 .term-footer { display: flex; justify-content: center; margin-top: 2px; margin-bottom: 0; }
-.term-footer .term-toggle { background: transparent; border: none; color: var(--muted); padding: 1px 2px; cursor: pointer; font-weight: 800; font-size: 22px; line-height: 1; }
+.term-footer .term-toggle { background: transparent; border: none; color: var(--muted); padding: 1px 2px; font-weight: 800; font-size: 22px; line-height: 1; }
 .term-footer .term-toggle:hover { color: var(--dark-blue); }
 .term-footer .term-toggle:focus { outline: none; box-shadow: var(--ring); border-radius: 6px; }
 
