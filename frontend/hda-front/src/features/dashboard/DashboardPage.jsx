@@ -11,6 +11,8 @@ const DashboardPage = () => {
     const [selectedProductType, setSelectedProductType] = useState('All');
     const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
 
+    const [isExplanationExpanded, setIsExplanationExpanded] = useState(false);
+
     useEffect(() => {
         const loadData = async () => {
             try {
@@ -117,8 +119,29 @@ const DashboardPage = () => {
     return (
         <div className="dashboard-container">
             <header className="dashboard-header">
-                <h1>Market Value Dashboard</h1>
-                <p>Compare General Insurance Value Measures (Motor)</p>
+                <h1>Market Value Insights Dashboard</h1>
+                <p>Compare UK motor insurers on claims frequency, acceptance rate, average payout, and complaints—based on FCA General Insurance Value Measures data.</p>
+
+                <button
+                    className="dashboard-explanation-toggle"
+                    onClick={() => setIsExplanationExpanded(!isExplanationExpanded)}
+                >
+                    {isExplanationExpanded ? 'Hide details' : 'Show details'}
+                </button>
+
+                {isExplanationExpanded && (
+                    <div className="dashboard-explanation-content">
+                        <p className="dashboard-explanation">
+                            Understanding how competitors perform on customer outcomes helps inform better pricing, product design, and retention strategies. This dashboard turns regulatory data into actionable market intelligence.
+                        </p>
+                        <p className="dashboard-explanation" style={{ marginTop: '10px' }}>
+                            Hastings Direct's products are underwritten primarily by Advantage Insurance Company Limited, which is how they appear in FCA data.
+                        </p>
+                        <p className="dashboard-explanation" style={{ marginTop: '10px', fontStyle: 'italic' }}>
+                            Data source: FCA General Insurance Value Measures (publicly available, updated annually)
+                        </p>
+                    </div>
+                )}
             </header>
 
             <div className="dashboard-controls">
