@@ -61,13 +61,27 @@ def clean_manufacturer(name):
     name = re.sub(r'\s+', ' ', name) # Remove extra spaces
     return name
 
+def filter_by_firm_products(df, firm_col_name, target_firm='Advantage Insurance Company Limited'):
+    """
+    Filters the dataframe to keep only products that are offered by the target firm.
+    """
+    # Find products for the target firm
+    firm_products = df[df[firm_col_name] == target_firm]['Product Category'].unique()
+    
+    if len(firm_products) == 0:
+        print(f"Warning: No products found for {target_firm}")
+        return pd.DataFrame(columns=df.columns)
+    else:
+        print(f"Products for {target_firm}: {firm_products}")
+        return df[df['Product Category'].isin(firm_products)]
+
 def process_2022(file_path):
     print(f"Processing 2022: {file_path}")
     # Header at row 10 (0-indexed) based on inspection
     df = pd.read_excel(file_path, sheet_name='Firms', header=10)
     
-    # Filter for Motor
-    df = df[df['Product Category'].str.contains('Motor', case=False, na=False)]
+    # Filter for products present for 'Advantage Insurance Company Limited'
+    df = filter_by_firm_products(df, 'Firm name')
     
     # Rename columns
     # Columns: ['Unnamed: 0', 'Firm name', 'Product Category', 'Claims acceptance rate', 'Claims frequency', 'Claims complaints as a % of claims', 'Average claims payout']
@@ -89,8 +103,8 @@ def process_2023(file_path):
     # Header at row 10
     df = pd.read_excel(file_path, sheet_name='Firms', header=10)
     
-    # Filter for Motor
-    df = df[df['Product Category'].str.contains('Motor', case=False, na=False)]
+    # Filter for products present for 'Advantage Insurance Company Limited'
+    df = filter_by_firm_products(df, 'Firm name')
     
     # Rename columns
     col_map = {
@@ -114,8 +128,8 @@ def process_2024(file_path):
     # Header at row 5
     df = pd.read_excel(file_path, sheet_name='Firms', header=5)
     
-    # Filter for Motor
-    df = df[df['Product Category'].str.contains('Motor', case=False, na=False)]
+    # Filter for products present for 'Advantage Insurance Company Limited'
+    df = filter_by_firm_products(df, 'Firm name')
     
     # Rename columns
     col_map = {
@@ -139,21 +153,21 @@ def main():
     
     # Process 2022
     try:
-        df_22 = process_2022('../data_sources/fca_gi_value_measures/gi-value-measures-data-2022.xlsx')
+        df_22 = process_2022('data-pipeline/hda-data-tools/data_sources/fca_gi_value_measures/gi-value-measures-data-2022.xlsx')
         all_data.append(df_22)
     except Exception as e:
         print(f"Error processing 2022: {e}")
 
     # Process 2023
     try:
-        df_23 = process_2023('../data_sources/fca_gi_value_measures/gi-value-measures-data-2023.xlsx')
+        df_23 = process_2023('data-pipeline/hda-data-tools/data_sources/fca_gi_value_measures/gi-value-measures-data-2023.xlsx')
         all_data.append(df_23)
     except Exception as e:
         print(f"Error processing 2023: {e}")
 
     # Process 2024
     try:
-        df_24 = process_2024('../data_sources/fca_gi_value_measures/gi-value-measures-data-2024.xlsx')
+        df_24 = process_2024('data-pipeline/hda-data-tools/data_sources/fca_gi_value_measures/gi-value-measures-data-2024.xlsx')
         all_data.append(df_24)
     except Exception as e:
         print(f"Error processing 2024: {e}")
@@ -191,11 +205,12 @@ def main():
     
     # Save
     # Save
-    output_file_csv = '../data_cleaned/value_measures_motor_clean.csv'
+    # Save
+    output_file_csv = 'data-pipeline/hda-data-tools/data_cleaned/value_measures_motor_clean.csv'
     final_df.to_csv(output_file_csv, index=False)
     print(f"Saved processed data to {output_file_csv}")
 
-    output_file_json = '../data_cleaned/value_measures_motor_clean.json'
+    output_file_json = 'data-pipeline/hda-data-tools/data_cleaned/value_measures_motor_clean.json'
     final_df.to_json(output_file_json, orient='records', indent=4)
     print(f"Saved processed data to {output_file_json}")
     print(final_df.head())
