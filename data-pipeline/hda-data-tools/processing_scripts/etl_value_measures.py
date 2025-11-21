@@ -129,7 +129,7 @@ def process_2024(file_path):
     df = pd.read_excel(file_path, sheet_name='Firms', header=5)
     
     # Filter for products present for 'Advantage Insurance Company Limited'
-    df = filter_by_firm_products(df, 'Firm name')
+    df = filter_by_firm_products(df, 'Firm Name')
     
     # Rename columns
     col_map = {
