@@ -1,322 +1,230 @@
 manufacturer,product_type,acceptance_rate,claims_frequency,complaints_rate,avg_payout,year,acceptance_rate_min,acceptance_rate_max,acceptance_rate_mid,claims_frequency_min,claims_frequency_max,claims_frequency_mid,complaints_rate_min,complaints_rate_max,complaints_rate_mid,avg_payout_min,avg_payout_max,avg_payout_mid
-Zurich Insurance Company Ltd,Motor (All),95 - 100%,5 - 10%,5 - 10%,£5500 - 6000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,5500.0,6000.0,5750.0
-Aviva Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Aviva Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£5000 - 5500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,5000.0,5500.0,5250.0
-AWP P&C S.A.,Extended warranty - motor (Stand-alone),90 - 95%,20 - 25%,0 - 5%,£500 - 1000,2024,0.9,0.95,0.925,0.2,0.25,0.225,0.0,0.05,0.025,500.0,1000.0,750.0
-AXA Insurance Designated Activity Company,Motor (All),95 - 100%,5 - 10%,5 - 10%,£7000 - 7500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,7000.0,7500.0,7250.0
-AXA Insurance UK Plc,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-AXA Insurance UK Plc,Motor (All),95 - 100%,5 - 10%,15 - 20%,£4000 - 4500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.15,0.2,0.175,4000.0,4500.0,4250.0
-AXA Insurance UK Plc,Motor cycle (All),90 - 95%,0 - 5%,35 - 40%,£8500 - 9000,2024,0.9,0.95,0.925,0.0,0.05,0.025,0.35,0.4,0.375,8500.0,9000.0,8750.0
-Business Insurance Solutions Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Chubb European Group SE,Motor (All),95 - 100%,25 - 30%,0 - 5%,£10000 - 10500,2024,0.95,1.0,0.975,0.25,0.3,0.275,0.0,0.05,0.025,10000.0,10500.0,10250.0
-Clements Europe Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3500 - 4000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Collingwood Insurance Company Ltd,Motor (All),90 - 95%,0 - 5%,0 - 5%,£5500 - 6000,2024,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,5500.0,6000.0,5750.0
-Cornish Mutual Assurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£4000 - 4500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,4000.0,4500.0,4250.0
-Covea Insurance plc,Motor (All),95 - 100%,5 - 10%,0 - 5%,£4000 - 4500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,4000.0,4500.0,4250.0
-Cover Genius Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,10 - 15%,0 - 5%,£500 - 1000,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,500.0,1000.0,750.0
-Cuvva Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
-Eridge Underwriting Agency Ltd,Motor (All),95 - 100%,20 - 25%,5 - 10%,£2500 - 3000,2024,0.95,1.0,0.975,0.2,0.25,0.225,0.05,0.1,0.075,2500.0,3000.0,2750.0
-esure Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-esure Insurance Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£4500 - 5000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,4500.0,5000.0,4750.0
-EUI Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-EUI Limited,Motor (All),95 - 100%,10 - 15%,10 - 15%,£3000 - 3500,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.1,0.15,0.125,3000.0,3500.0,3250.0
-Financial & Legal Insurance Company Ltd,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2024,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Financial & Legal Insurance Company Ltd,Extended warranty - motor (Stand-alone),70 - 75%,25 - 30%,0 - 5%,£500 - 1000,2024,0.7,0.75,0.725,0.25,0.3,0.275,0.0,0.05,0.025,500.0,1000.0,750.0
-First Central Insurance Management Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£4000 - 4500,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,4000.0,4500.0,4250.0
-First Underwriting Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£3500 - 4000,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Aviva Insurance Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Atlas Insurance PCC Limited,Excess protection (for motor insurance) (Stand-alone),95 - 100%,5 - 10%,0 - 5%,£500 - 1000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,500.0,1000.0,750.0
-Fortegra Europe Insurance Company Ltd,Excess protection (for motor insurance) (Stand-alone),95 - 100%,10 - 15%,0 - 5%,£0 - 500,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,0.0,500.0,250.0
-Astrenska Insurance Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-AA Underwriting Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3000 - 3500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3000.0,3500.0,3250.0
-ABLE INSURANCE SERVICES LIMITED,Motor (All),70 - 75%,10 - 15%,0 - 5%,£4000 - 4500,2024,0.7,0.75,0.725,0.1,0.15,0.125,0.0,0.05,0.025,4000.0,4500.0,4250.0
-Acasta European Insurance Company Limited,Extended warranty - motor (Stand-alone),95 - 100%,25 - 30%,0 - 5%,£1000 - 1500,2024,0.95,1.0,0.975,0.25,0.3,0.275,0.0,0.05,0.025,1000.0,1500.0,1250.0
-Accredited Insurance (Europe) Ltd,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Accredited Insurance (Europe) Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£4000 - 4500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,4000.0,4500.0,4250.0
-Accredited Insurance (Europe) Ltd,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£75000 - 75500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,75000.0,75500.0,75250.0
-Acromas Insurance Company Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Acromas Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3500 - 4000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
-Action 365 Ltd,Motor (All),95 - 100%,10 - 15%,0 - 5%,£5000 - 5500,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,5000.0,5500.0,5250.0
-Advantage Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3500 - 4000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
-Advantage Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£3000 - 3500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,3000.0,3500.0,3250.0
-Ageas Insurance Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3500 - 4000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Ageas Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£5500 - 6000,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,5500.0,6000.0,5750.0
-Aioi Nissay Dowa Insurance UK Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£7000 - 7500,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,7000.0,7500.0,7250.0
-Allianz Insurance Plc,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Alwyn Insurance Company Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Alwyn Insurance Company Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£500 - 1000,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,500.0,1000.0,750.0
-Alwyn Insurance Company Limited,Motor cycle (All),95 - 100%,15 - 20%,0 - 5%,£3500 - 4000,2024,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,3500.0,4000.0,3750.0
-AMERICAN INTERNATIONAL GROUP UK LIMITED,Excess protection (for motor insurance) (Stand-alone),95 - 100%,5 - 10%,0 - 5%,£0 - 500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,0.0,500.0,250.0
-AMERICAN INTERNATIONAL GROUP UK LIMITED,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3000 - 3500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3000.0,3500.0,3250.0
-AmTrust Specialty Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-ARAG Legal Expenses Insurance Company Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Arc Legal Assistance Limited,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2024,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-First Underwriting Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£3500 - 4000,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,3500.0,4000.0,3750.0
-Alwyn Insurance Company Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£4500 - 5000,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,4500.0,5000.0,4750.0
-Fortegra Europe Insurance Company Ltd,Extended warranty - motor (Stand-alone),75 - 80%,15 - 20%,0 - 5%,£500 - 1000,2024,0.75,0.8,0.775,0.15,0.2,0.175,0.0,0.05,0.025,500.0,1000.0,750.0
-One Call Insurance Services Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3000 - 3500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3000.0,3500.0,3250.0
-Premier Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3000 - 3500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3000.0,3500.0,3250.0
-Premier Underwriting Ltd,Motor cycle (All),90 - 95%,0 - 5%,0 - 5%,£4500 - 5000,2024,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,4500.0,5000.0,4750.0
-Proximo Ltd,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-QBE UK Limited,Extended warranty - motor (Stand-alone),95 - 100%,25 - 30%,0 - 5%,£500 - 1000,2024,0.95,1.0,0.975,0.25,0.3,0.275,0.0,0.05,0.025,500.0,1000.0,750.0
-RAC Insurance Limited,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2024,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Red Sands Insurance Company (Europe) Limited,Extended warranty - motor (Stand-alone),50 - 55%,35 - 40%,0 - 5%,£500 - 1000,2024,0.5,0.55,0.525,0.35,0.4,0.375,0.0,0.05,0.025,500.0,1000.0,750.0
-Royal & Sun Alliance Insurance Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£7500 - 8000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,7500.0,8000.0,7750.0
-Sabre Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£10000 - 10500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,10000.0,10500.0,10250.0
-Sabre Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£4000 - 4500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,4000.0,4500.0,4250.0
-Tesco Underwriting Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3500 - 4000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3500.0,4000.0,3750.0
-The National Farmers' Union Mutual Insurance Society Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-The National Farmers' Union Mutual Insurance Society Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
-Tradex Insurance Company PLC,Motor (All),95 - 100%,0 - 5%,5 - 10%,£1500 - 2000,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,1500.0,2000.0,1750.0
-Tradex Insurance Company PLC,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£4000 - 4500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,4000.0,4500.0,4250.0
-Trinity Lane Insurance Company Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2000 - 2500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
-Trinity Lane Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£2500 - 3000,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
-U K Insurance Limited,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2024,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-U K Insurance Limited,Motor (All),95 - 100%,5 - 10%,10 - 15%,£4000 - 4500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.1,0.15,0.125,4000.0,4500.0,4250.0
-USAA S.A. UK Branch,Motor (All),95 - 100%,35 - 40%,0 - 5%,£1500 - 2000,2024,0.95,1.0,0.975,0.35,0.4,0.375,0.0,0.05,0.025,1500.0,2000.0,1750.0
-Wrisk Transfer Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2000 - 2500,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2000.0,2500.0,2250.0
-Yoga Insurance Services Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Zurich Insurance Company Ltd,Excess protection (for motor insurance) (Stand-alone),95 - 100%,5 - 10%,0 - 5%,£500 - 1000,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,500.0,1000.0,750.0
-Haven Insurance Company Limited,Motor (All),95 - 100%,20 - 25%,5 - 10%,£4500 - 5000,2024,0.95,1.0,0.975,0.2,0.25,0.225,0.05,0.1,0.075,4500.0,5000.0,4750.0
-Peppercorn Insurance Services Limited,Motor (All),95 - 100%,15 - 20%,0 - 5%,£1000 - 1500,2024,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,1000.0,1500.0,1250.0
-Trinity Lane Insurance Company Limited,Excess protection (for motor insurance) (Stand-alone),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-One Call Insurance Services Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Liverpool Victoria Insurance Company Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
-HDI Global Specialty SE,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Newline Insurance Company Limited,Extended warranty - motor (Stand-alone),80 - 85%,10 - 15%,0 - 5%,£0 - 500,2024,0.8,0.85,0.825,0.1,0.15,0.125,0.0,0.05,0.025,0.0,500.0,250.0
-Hedgehog Limited,Motor (All),95 - 100%,10 - 15%,10 - 15%,£5500 - 6000,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.1,0.15,0.125,5500.0,6000.0,5750.0
-Highway Insurance Company Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Highway Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£4500 - 5000,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,4500.0,5000.0,4750.0
-Hiscox Insurance Company Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£6000 - 6500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,6000.0,6500.0,6250.0
-IQUW Syndicate Management Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£6000 - 6500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,6000.0,6500.0,6250.0
-IQUW Syndicate Management Limited,Motor cycle (All),95 - 100%,0 - 5%,10 - 15%,£5000 - 5500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.1,0.15,0.125,5000.0,5500.0,5250.0
-KGM Underwriting Services Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£3000 - 3500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3000.0,3500.0,3250.0
-KGM Underwriting Services Limited,Motor cycle (All),90 - 95%,0 - 5%,0 - 5%,£2000 - 2500,2024,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
-Liverpool Victoria Insurance Company Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Inter Partner Assistance SA,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-London General Insurance Company Limited,Extended warranty - motor (Stand-alone),75 - 80%,30 - 35%,10 - 15%,£500 - 1000,2024,0.75,0.8,0.775,0.3,0.35,0.325,0.1,0.15,0.125,500.0,1000.0,750.0
-Motors Insurance Company Limited,Extended warranty - motor (Stand-alone),80 - 85%,45 - 50%,0 - 5%,£1000 - 1500,2024,0.8,0.85,0.825,0.45,0.5,0.475,0.0,0.05,0.025,1000.0,1500.0,1250.0
-Mulsanne Insurance Company Limited,Motor (All),95 - 100%,20 - 25%,0 - 5%,£9000 - 9500,2024,0.95,1.0,0.975,0.2,0.25,0.225,0.0,0.05,0.025,9000.0,9500.0,9250.0
-Newline Insurance Company Limited,Excess protection (for motor insurance) (Stand-alone),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Marshmallow Financial Services Ltd,Motor (All),95 - 100%,10 - 15%,5 - 10%,£5000 - 5500,2024,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,5000.0,5500.0,5250.0
-MS Amlin Insurance SE,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2500 - 3000,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Momentum Warranties Ltd,Extended warranty - motor (Stand-alone),40 - 45%,5 - 10%,15 - 20%,£0 - 500,2024,0.4,0.45,0.425,0.05,0.1,0.075,0.15,0.2,0.175,0.0,500.0,250.0
-Millennium Insurance Company Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£4500 - 5000,2024,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,4500.0,5000.0,4750.0
-Millennium Insurance Company Limited,Extended warranty - motor (Stand-alone),75 - 80%,30 - 35%,0 - 5%,£500 - 1000,2024,0.75,0.8,0.775,0.3,0.35,0.325,0.0,0.05,0.025,500.0,1000.0,750.0
-Midas Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3000 - 3500,2024,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3000.0,3500.0,3250.0
-Allianz Insurance Plc,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Advantage Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£2500 - 3000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
-Alwyn Insurance Company Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£500 - 1000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,500.0,1000.0,750.0
-Aioi Nissay Dowa Insurance UK Limited,Motor (All),95 - 100%,20 - 25%,0 - 5%,£7500 - 8000,2023,0.95,1.0,0.975,0.2,0.25,0.225,0.0,0.05,0.025,7500.0,8000.0,7750.0
-Ageas Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£7500 - 8000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,7500.0,8000.0,7750.0
-Alwyn Insurance Company Limited,Motor (All),90 - 95%,10 - 15%,0 - 5%,£5000 - 5500,2023,0.9,0.95,0.925,0.1,0.15,0.125,0.0,0.05,0.025,5000.0,5500.0,5250.0
-Ageas Insurance Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3500 - 4000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Acromas Insurance Company Limited,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2023,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Advantage Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3500 - 4000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
-Action 365 Ltd,Motor (All),95 - 100%,15 - 20%,5 - 10%,£2500 - 3000,2023,0.95,1.0,0.975,0.15,0.2,0.175,0.05,0.1,0.075,2500.0,3000.0,2750.0
-Acromas Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,10 - 15%,£3000 - 3500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.1,0.15,0.125,3000.0,3500.0,3250.0
-Accredited Insurance (Europe) Ltd,Motor cycle (All),85 - 90%,0 - 5%,5 - 10%,£4000 - 4500,2023,0.85,0.9,0.875,0.0,0.05,0.025,0.05,0.1,0.075,4000.0,4500.0,4250.0
-Accredited Insurance (Europe) Ltd,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Acasta European Insurance Company Limited,Extended warranty - motor (Stand-alone),95 - 100%,10 - 15%,0 - 5%,£500 - 1000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,500.0,1000.0,750.0
-AMERICAN INTERNATIONAL GROUP UK LIMITED,Excess protection (for motor insurance) (Stand-alone),95 - 100%,5 - 10%,0 - 5%,£0 - 500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,0.0,500.0,250.0
-Accredited Insurance (Europe) Ltd,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Alwyn Insurance Company Limited,Motor cycle (All),95 - 100%,15 - 20%,0 - 5%,£3000 - 3500,2023,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,3000.0,3500.0,3250.0
-AXA Insurance Designated Activity Company,Motor (All),95 - 100%,5 - 10%,5 - 10%,£5500 - 6000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,5500.0,6000.0,5750.0
-AMERICAN INTERNATIONAL GROUP UK LIMITED,Motor (All),95 - 100%,5 - 10%,0 - 5%,£15000 - 15500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,15000.0,15500.0,15250.0
-AWP Assistance UK Ltd,Extended warranty - motor (Stand-alone),90 - 95%,20 - 25%,0 - 5%,£500 - 1000,2023,0.9,0.95,0.925,0.2,0.25,0.225,0.0,0.05,0.025,500.0,1000.0,750.0
-Business Insurance Solutions Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£3000 - 3500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,3000.0,3500.0,3250.0
-AA Underwriting Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£2000 - 2500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,2000.0,2500.0,2250.0
-Building Block Insurance PCC Ltd,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-AXA Insurance UK Plc,Motor cycle (All),95 - 100%,0 - 5%,15 - 20%,£6000 - 6500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.15,0.2,0.175,6000.0,6500.0,6250.0
-AXA Insurance UK Plc,Motor (All),95 - 100%,5 - 10%,15 - 20%,£3500 - 4000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.15,0.2,0.175,3500.0,4000.0,3750.0
-AXA Insurance UK Plc,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Aviva Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£9000 - 9500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,9000.0,9500.0,9250.0
-Amtrust Europe Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Aviva Insurance Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Aviva Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-AutoProtect (MBI) Ltd,Extended warranty - motor (Add-on),60 - 65%,25 - 30%,0 - 5%,£500 - 1000,2023,0.6,0.65,0.625,0.25,0.3,0.275,0.0,0.05,0.025,500.0,1000.0,750.0
-Astrenska Insurance Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Arc Legal Assistance Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Arc Legal Assistance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Able Insurance Services Ltd,Motor (All),95 - 100%,10 - 15%,0 - 5%,£6000 - 6500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,6000.0,6500.0,6250.0
-Proximo Ltd,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Zurich Insurance Company Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£5000 - 5500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,5000.0,5500.0,5250.0
-One Call Insurance Services Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£2000 - 2500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,2000.0,2500.0,2250.0
-Royal & Sun Alliance Insurance Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£5500 - 6000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,5500.0,6000.0,5750.0
-Royal & Sun Alliance Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-RAC Insurance Limited,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2023,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-QBE UK Limited,Extended warranty - motor (Stand-alone),95 - 100%,25 - 30%,0 - 5%,£500 - 1000,2023,0.95,1.0,0.975,0.25,0.3,0.275,0.0,0.05,0.025,500.0,1000.0,750.0
-Premier Underwriting Ltd,Motor cycle (All),90 - 95%,0 - 5%,0 - 5%,£3500 - 4000,2023,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Premier Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
-One Call Insurance Services Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Sabre Insurance Company Limited,Motor cycle (All),90 - 95%,5 - 10%,0 - 5%,£3000 - 3500,2023,0.9,0.95,0.925,0.05,0.1,0.075,0.0,0.05,0.025,3000.0,3500.0,3250.0
-Newline Insurance Company Limited,Excess protection (for motor insurance) (Stand-alone),95 - 100%,5 - 10%,0 - 5%,£500 - 1000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,500.0,1000.0,750.0
-Mulsanne Insurance Company Limited,Motor (All),95 - 100%,15 - 20%,5 - 10%,£3500 - 4000,2023,0.95,1.0,0.975,0.15,0.2,0.175,0.05,0.1,0.075,3500.0,4000.0,3750.0
-MS Amlin Insurance SE,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Motors Insurance Company Limited,Extended warranty - motor (Stand-alone),85 - 90%,45 - 50%,0 - 5%,£500 - 1000,2023,0.85,0.9,0.875,0.45,0.5,0.475,0.0,0.05,0.025,500.0,1000.0,750.0
-Motors Insurance Company Limited,Extended warranty - motor (Add-on),80 - 85%,10 - 15%,0 - 5%,£500 - 1000,2023,0.8,0.85,0.825,0.1,0.15,0.125,0.0,0.05,0.025,500.0,1000.0,750.0
-Chubb European Group SE,Motor (All),95 - 100%,20 - 25%,0 - 5%,£7500 - 8000,2023,0.95,1.0,0.975,0.2,0.25,0.225,0.0,0.05,0.025,7500.0,8000.0,7750.0
-Sabre Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£9500 - 10000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,9500.0,10000.0,9750.0
-SCOR UK Company Ltd,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Zurich Insurance Company Ltd,Excess protection (for motor insurance) (Stand-alone),90 - 95%,5 - 10%,0 - 5%,£0 - 500,2023,0.9,0.95,0.925,0.05,0.1,0.075,0.0,0.05,0.025,0.0,500.0,250.0
-U K Insurance Limited,Motor (All),95 - 100%,10 - 15%,10 - 15%,£3500 - 4000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.1,0.15,0.125,3500.0,4000.0,3750.0
-Yoga Insurance Services Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£1500 - 2000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,1500.0,2000.0,1750.0
-Wrisk Transfer Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2000 - 2500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2000.0,2500.0,2250.0
-West Bay Insurance Plc,Motor cycle (All),95 - 100%,0 - 5%,15 - 20%,£6000 - 6500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.15,0.2,0.175,6000.0,6500.0,6250.0
-West Bay Insurance Plc,Motor (All),95 - 100%,5 - 10%,5 - 10%,£4000 - 4500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,4000.0,4500.0,4250.0
-West Bay Insurance Plc,Excess protection (for motor insurance) (Add-on),85 - 90%,0 - 5%,0 - 5%,£0 - 500,2023,0.85,0.9,0.875,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
 USAA S.A. UK Branch,Motor (All),95 - 100%,35 - 40%,0 - 5%,£1500 - 2000,2023,0.95,1.0,0.975,0.35,0.4,0.375,0.0,0.05,0.025,1500.0,2000.0,1750.0
-U K Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
+Watford Insurance Company Europe Limited,Home - (buildings and contents combined) (All),60 - 65%,0 - 5%,20 - 25%,£7000 - 7500,2023,0.6,0.65,0.625,0.0,0.05,0.025,0.2,0.25,0.225,7000.0,7500.0,7250.0
+West Bay Insurance Plc,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,25 - 30%,£4000 - 4500,2023,0.75,0.8,0.775,0.0,0.05,0.025,0.25,0.3,0.275,4000.0,4500.0,4250.0
+West Bay Insurance Plc,Motor (All),95 - 100%,5 - 10%,5 - 10%,£4000 - 4500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,4000.0,4500.0,4250.0
+West Bay Insurance Plc,Motor cycle (All),95 - 100%,0 - 5%,15 - 20%,£6000 - 6500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.15,0.2,0.175,6000.0,6500.0,6250.0
+Wrisk Transfer Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2000 - 2500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2000.0,2500.0,2250.0
+Yoga Insurance Services Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£1500 - 2000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,1500.0,2000.0,1750.0
+Zurich Insurance Company Ltd,Home - (buildings and contents combined) (All),75 - 80%,5 - 10%,5 - 10%,£10000 - 10500,2023,0.75,0.8,0.775,0.05,0.1,0.075,0.05,0.1,0.075,10000.0,10500.0,10250.0
+Zurich Insurance Company Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£5000 - 5500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,5000.0,5500.0,5250.0
+Royal & Sun Alliance Insurance Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£5500 - 6000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,5500.0,6000.0,5750.0
+The Salvation Army General Insurance Corporation Ltd,Home - (buildings and contents combined) (All),90 - 95%,5 - 10%,5 - 10%,£3000 - 3500,2023,0.9,0.95,0.925,0.05,0.1,0.075,0.05,0.1,0.075,3000.0,3500.0,3250.0
+Sabre Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£9500 - 10000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,9500.0,10000.0,9750.0
+Sabre Insurance Company Limited,Motor cycle (All),90 - 95%,5 - 10%,0 - 5%,£3000 - 3500,2023,0.9,0.95,0.925,0.05,0.1,0.075,0.0,0.05,0.025,3000.0,3500.0,3250.0
+SCOR Managing Agency Ltd,Home - (buildings and contents combined) (All),85 - 90%,0 - 5%,5 - 10%,£6500 - 7000,2023,0.85,0.9,0.875,0.0,0.05,0.025,0.05,0.1,0.075,6500.0,7000.0,6750.0
+Tesco Personal Finance PLC,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,5 - 10%,£4000 - 4500,2023,0.75,0.8,0.775,0.0,0.05,0.025,0.05,0.1,0.075,4000.0,4500.0,4250.0
 Tesco Personal Finance PLC,Motor (All),95 - 100%,5 - 10%,5 - 10%,£6500 - 7000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,6500.0,7000.0,6750.0
-Trinity Lane Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£2000 - 2500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
-Trinity Lane Insurance Company Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£1500 - 2000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,1500.0,2000.0,1750.0
-Trinity Lane Insurance Company Limited,Excess protection (for motor insurance) (Stand-alone),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Tradex Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£7500 - 8000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,7500.0,8000.0,7750.0
+The National Farmers' Union Mutual Insurance Society Limited,Home - (buildings and contents combined) (All),90 - 95%,5 - 10%,5 - 10%,£8500 - 9000,2023,0.9,0.95,0.925,0.05,0.1,0.075,0.05,0.1,0.075,8500.0,9000.0,8750.0
 The National Farmers' Union Mutual Insurance Society Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
-The National Farmers' Union Mutual Insurance Society Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
+Munich Re Syndicate Limited,Home - (buildings and contents combined) (All),95 - 100%,5 - 10%,10 - 15%,£12000 - 12500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.1,0.15,0.125,12000.0,12500.0,12250.0
+Neos Ventures Limited,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,5 - 10%,£1000 - 1500,2023,0.8,0.85,0.825,0.0,0.05,0.025,0.05,0.1,0.075,1000.0,1500.0,1250.0
+One Call Insurance Services Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£2000 - 2500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,2000.0,2500.0,2250.0
+Peppercorn Insurance Services Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£500 - 1000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,500.0,1000.0,750.0
+Plum Underwriting Limited,Home - (buildings and contents combined) (All),70 - 75%,0 - 5%,10 - 15%,£18000 - 18500,2023,0.7,0.75,0.725,0.0,0.05,0.025,0.1,0.15,0.125,18000.0,18500.0,18250.0
+Premier Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Premier Underwriting Ltd,Motor cycle (All),90 - 95%,0 - 5%,0 - 5%,£3500 - 4000,2023,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
+Royal & Sun Alliance Insurance Limited,Home - (buildings and contents combined) (All),70 - 75%,0 - 5%,10 - 15%,£5000 - 5500,2023,0.7,0.75,0.725,0.0,0.05,0.025,0.1,0.15,0.125,5000.0,5500.0,5250.0
+Liverpool Victoria Insurance Company Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2000 - 2500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2000.0,2500.0,2250.0
+Lloyds Bank General Insurance Limited,Home - (buildings and contents combined) (All),55 - 60%,0 - 5%,10 - 15%,£5500 - 6000,2023,0.55,0.6,0.575,0.0,0.05,0.025,0.1,0.15,0.125,5500.0,6000.0,5750.0
+Marshmallow Financial Services Ltd,Motor (All),95 - 100%,10 - 15%,5 - 10%,£2500 - 3000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Marshmallow Insurance Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£2500 - 3000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Midas Underwriting Ltd,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,20 - 25%,£8500 - 9000,2023,0.8,0.85,0.825,0.0,0.05,0.025,0.2,0.25,0.225,8500.0,9000.0,8750.0
+Midas Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
+MS Amlin Insurance SE,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Mulsanne Insurance Company Limited,Motor (All),95 - 100%,15 - 20%,5 - 10%,£3500 - 4000,2023,0.95,1.0,0.975,0.15,0.2,0.175,0.05,0.1,0.075,3500.0,4000.0,3750.0
+Hiscox Insurance Company Limited,Home - (buildings and contents combined) (All),95 - 100%,5 - 10%,5 - 10%,£21000 - 21500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,21000.0,21500.0,21250.0
+Hiscox Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£5500 - 6000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,5500.0,6000.0,5750.0
+Integra Insurance Solutions Limited,Home - (buildings and contents combined) (All),70 - 75%,0 - 5%,5 - 10%,£5000 - 5500,2023,0.7,0.75,0.725,0.0,0.05,0.025,0.05,0.1,0.075,5000.0,5500.0,5250.0
+IQUW Syndicate Management Limited,Motor (All),95 - 100%,5 - 10%,10 - 15%,£4500 - 5000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.1,0.15,0.125,4500.0,5000.0,4750.0
+IQUW Syndicate Management Limited,Motor cycle (All),95 - 100%,0 - 5%,50 - 55%,£8500 - 9000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.5,0.55,0.525,8500.0,9000.0,8750.0
+JRP Insurance Management Limited,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,0 - 5%,£6000 - 6500,2023,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,6000.0,6500.0,6250.0
+KGM Underwriting Services Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
+KGM Underwriting Services Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£1500 - 2000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,1500.0,2000.0,1750.0
+Liverpool Victoria Insurance Company Limited,Home - (buildings and contents combined) (All),70 - 75%,0 - 5%,5 - 10%,£2500 - 3000,2023,0.7,0.75,0.725,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Great Lakes Insurance UK Limited,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,5 - 10%,£2500 - 3000,2023,0.75,0.8,0.775,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Gresham Insurance Company Limited,Home - (buildings and contents combined) (All),70 - 75%,5 - 10%,0 - 5%,£2500 - 3000,2023,0.7,0.75,0.725,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Haven Insurance Company Limited,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,15 - 20%,£7000 - 7500,2023,0.9,0.95,0.925,0.0,0.05,0.025,0.15,0.2,0.175,7000.0,7500.0,7250.0
+Haven Insurance Company Limited,Motor (All),95 - 100%,25 - 30%,5 - 10%,£4500 - 5000,2023,0.95,1.0,0.975,0.25,0.3,0.275,0.05,0.1,0.075,4500.0,5000.0,4750.0
+HCC International Insurance Company Plc,Home - (buildings and contents combined) (All),90 - 95%,25 - 30%,25 - 30%,£2500 - 3000,2023,0.9,0.95,0.925,0.25,0.3,0.275,0.25,0.3,0.275,2500.0,3000.0,2750.0
+HDI Global Specialty SE,Home - (buildings and contents combined) (All),95 - 100%,5 - 10%,0 - 5%,£0 - 500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,0.0,500.0,250.0
+Highway Insurance Company Limited,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,0 - 5%,£3000 - 3500,2023,0.75,0.8,0.775,0.0,0.05,0.025,0.0,0.05,0.025,3000.0,3500.0,3250.0
+Highway Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2000 - 2500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2000.0,2500.0,2250.0
+Highway Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£3500 - 4000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
+First Central Insurance Management Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£3000 - 3500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,3000.0,3500.0,3250.0
+First Underwriting Limited,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,10 - 15%,£2500 - 3000,2023,0.75,0.8,0.775,0.0,0.05,0.025,0.1,0.15,0.125,2500.0,3000.0,2750.0
+First Underwriting Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
+First Underwriting Limited,Motor cycle (All),85 - 90%,0 - 5%,5 - 10%,£4000 - 4500,2023,0.85,0.9,0.875,0.0,0.05,0.025,0.05,0.1,0.075,4000.0,4500.0,4250.0
+Frontier Insurance Solutions LTD,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,0 - 5%,£7500 - 8000,2023,0.75,0.8,0.775,0.0,0.05,0.025,0.0,0.05,0.025,7500.0,8000.0,7750.0
+Geo Underwriting Services Limited,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,0 - 5%,£4500 - 5000,2023,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,4500.0,5000.0,4750.0
+Great Lakes Insurance SE,Home - (buildings and contents combined) (All),75 - 80%,5 - 10%,10 - 15%,£5500 - 6000,2023,0.75,0.8,0.775,0.05,0.1,0.075,0.1,0.15,0.125,5500.0,6000.0,5750.0
+Covea Insurance plc,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,10 - 15%,£6000 - 6500,2023,0.8,0.85,0.825,0.0,0.05,0.025,0.1,0.15,0.125,6000.0,6500.0,6250.0
+Covea Insurance plc,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3000 - 3500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3000.0,3500.0,3250.0
+Cuvva Limited,Motor (All),85 - 90%,30 - 35%,0 - 5%,£8000 - 8500,2023,0.85,0.9,0.875,0.3,0.35,0.325,0.0,0.05,0.025,8000.0,8500.0,8250.0
+Ecclesiastical Insurance Office Plc,Home - (buildings and contents combined) (All),90 - 95%,5 - 10%,0 - 5%,£11000 - 11500,2023,0.9,0.95,0.925,0.05,0.1,0.075,0.0,0.05,0.025,11000.0,11500.0,11250.0
+Eridge Underwriting Agency Ltd,Motor (All),95 - 100%,15 - 20%,0 - 5%,£1500 - 2000,2023,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,1500.0,2000.0,1750.0
+esure Insurance Limited,Home - (buildings and contents combined) (All),55 - 60%,0 - 5%,5 - 10%,£6000 - 6500,2023,0.55,0.6,0.575,0.0,0.05,0.025,0.05,0.1,0.075,6000.0,6500.0,6250.0
+esure Insurance Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3500 - 4000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
+EUI Limited,Home - (buildings and contents combined) (All),60 - 65%,5 - 10%,10 - 15%,£2500 - 3000,2023,0.6,0.65,0.625,0.05,0.1,0.075,0.1,0.15,0.125,2500.0,3000.0,2750.0
+EUI Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
+China Taiping Insurance (UK) Co Ltd,Home - (buildings and contents combined) (All),95 - 100%,5 - 10%,0 - 5%,£500 - 1000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,500.0,1000.0,750.0
 China Taiping Insurance (UK) Co Ltd,Motor (All),95 - 100%,0 - 5%,5 - 10%,£1000 - 1500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,1000.0,1500.0,1250.0
+Chubb European Group SE,Home - (buildings and contents combined) (All),95 - 100%,10 - 15%,0 - 5%,£11500 - 12000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,11500.0,12000.0,11750.0
+Chubb European Group SE,Motor (All),95 - 100%,20 - 25%,0 - 5%,£7500 - 8000,2023,0.95,1.0,0.975,0.2,0.25,0.225,0.0,0.05,0.025,7500.0,8000.0,7750.0
 Clements Europe Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
 Collingwood Insurance Company Ltd,Motor (All),80 - 85%,5 - 10%,0 - 5%,£3000 - 3500,2023,0.8,0.85,0.825,0.05,0.1,0.075,0.0,0.05,0.025,3000.0,3500.0,3250.0
-Marshmallow Insurance Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£2500 - 3000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,2500.0,3000.0,2750.0
-Peppercorn Insurance Services Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£500 - 1000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,500.0,1000.0,750.0
-Midas Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
-esure Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-First Underwriting Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
-First Central Insurance Management Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£3000 - 3500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,3000.0,3500.0,3250.0
-Financial & Legal Insurance Company Ltd,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2023,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-EUI Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
-EUI Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-esure Insurance Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3500 - 4000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
-Eridge Underwriting Agency Ltd,Motor (All),95 - 100%,15 - 20%,0 - 5%,£1500 - 2000,2023,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,1500.0,2000.0,1750.0
-Fortegra Europe Insurance Company Ltd,Extended warranty - motor (Stand-alone),75 - 80%,15 - 20%,0 - 5%,£500 - 1000,2023,0.75,0.8,0.775,0.15,0.2,0.175,0.0,0.05,0.025,500.0,1000.0,750.0
-DAS Legal Expenses Insurance Company Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Cuvva Limited,Motor (All),85 - 90%,30 - 35%,0 - 5%,£8000 - 8500,2023,0.85,0.9,0.875,0.3,0.35,0.325,0.0,0.05,0.025,8000.0,8500.0,8250.0
-Cover Genius Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Covea Insurance plc,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3000 - 3500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3000.0,3500.0,3250.0
-Covea Insurance plc,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
+Cornish Mutual Assurance Company Limited,Home - (buildings and contents combined) (All),95 - 100%,5 - 10%,0 - 5%,£5500 - 6000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,5500.0,6000.0,5750.0
 Cornish Mutual Assurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
-First Underwriting Limited,Motor cycle (All),85 - 90%,0 - 5%,5 - 10%,£4000 - 4500,2023,0.85,0.9,0.875,0.0,0.05,0.025,0.05,0.1,0.075,4000.0,4500.0,4250.0
-Haven Insurance Company Limited,Motor (All),95 - 100%,25 - 30%,5 - 10%,£4500 - 5000,2023,0.95,1.0,0.975,0.25,0.3,0.275,0.05,0.1,0.075,4500.0,5000.0,4750.0
-IQUW Syndicate Management Limited,Motor cycle (All),95 - 100%,0 - 5%,50 - 55%,£8500 - 9000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.5,0.55,0.525,8500.0,9000.0,8750.0
-Marshmallow Financial Services Ltd,Motor (All),95 - 100%,10 - 15%,5 - 10%,£2500 - 3000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,2500.0,3000.0,2750.0
-London General Insurance Company Limited,Extended warranty - motor (Stand-alone),75 - 80%,35 - 40%,0 - 5%,£500 - 1000,2023,0.75,0.8,0.775,0.35,0.4,0.375,0.0,0.05,0.025,500.0,1000.0,750.0
-Liverpool Victoria Insurance Company Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2000 - 2500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2000.0,2500.0,2250.0
-Liverpool Victoria Insurance Company Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-KGM Underwriting Services Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£1500 - 2000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,1500.0,2000.0,1750.0
-KGM Underwriting Services Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
-IQUW Syndicate Management Limited,Motor (All),95 - 100%,5 - 10%,10 - 15%,£4500 - 5000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.1,0.15,0.125,4500.0,5000.0,4750.0
-HDI Global Specialty SE,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Inter Partner Assistance SA,Excess protection (for motor insurance) (Stand-alone),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Inter Partner Assistance SA,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,5 - 10%,£0 - 500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,0.0,500.0,250.0
-Hiscox Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£5500 - 6000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,5500.0,6000.0,5750.0
-Highway Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£3500 - 4000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Highway Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2000 - 2500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2000.0,2500.0,2250.0
-Helvetia Global Solutions Ltd,Extended warranty - motor (Add-on),65 - 70%,5 - 10%,0 - 5%,£500 - 1000,2023,0.65,0.7,0.675,0.05,0.1,0.075,0.0,0.05,0.025,500.0,1000.0,750.0
-Tesco Personal Finance PLC,Motor (All),95 - 100%,5 - 10%,5 - 10%,£5500 - 6000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,5500.0,6000.0,5750.0
-Sabre Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£8000 - 8500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,8000.0,8500.0,8250.0
-Aioi Nissay Dowa Insurance UK Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£10000 - 10500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,10000.0,10500.0,10250.0
-Sabre Insurance Company Limited,Motor cycle (All),95 - 100%,5 - 10%,0 - 5%,£1000 - 1500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,1000.0,1500.0,1250.0
-Allianz Insurance Plc,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Ageas Insurance Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3500 - 4000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Cuvva Limited,Motor (All),90 - 95%,5 - 10%,0 - 5%,£1500 - 2000,2022,0.9,0.95,0.925,0.05,0.1,0.075,0.0,0.05,0.025,1500.0,2000.0,1750.0
-Alwyn Insurance Company Limited,Motor (All),90 - 95%,10 - 15%,0 - 5%,£4000 - 4500,2022,0.9,0.95,0.925,0.1,0.15,0.125,0.0,0.05,0.025,4000.0,4500.0,4250.0
-Royal & Sun Alliance Insurance Limited,Motor (All),95 - 100%,15 - 20%,0 - 5%,£4500 - 5000,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,4500.0,5000.0,4750.0
-Royal & Sun Alliance Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Ageas Insurance Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Real Garant Versicherung Aktiengesellschaft,Extended warranty - motor (Stand-alone),95 - 100%,35 - 40%,0 - 5%,£500 - 1000,2022,0.95,1.0,0.975,0.35,0.4,0.375,0.0,0.05,0.025,500.0,1000.0,750.0
-RAC Insurance Limited,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Alwyn Insurance Company Limited,Motor cycle (All),95 - 100%,65 - 70%,0 - 5%,£4500 - 5000,2022,0.95,1.0,0.975,0.65,0.7,0.675,0.0,0.05,0.025,4500.0,5000.0,4750.0
-AMERICAN INTERNATIONAL GROUP UK LIMITED,Excess protection (for motor insurance) (Stand-alone),95 - 100%,5 - 10%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,0.0,500.0,250.0
-QIC Europe Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£1000 - 1500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,1000.0,1500.0,1250.0
-QBE UK Limited,Extended warranty - motor (Stand-alone),95 - 100%,20 - 25%,0 - 5%,£500 - 1000,2022,0.95,1.0,0.975,0.2,0.25,0.225,0.0,0.05,0.025,500.0,1000.0,750.0
-AMERICAN INTERNATIONAL GROUP UK LIMITED,Motor (All),95 - 100%,10 - 15%,0 - 5%,£9000 - 9500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,9000.0,9500.0,9250.0
-Proximo Ltd,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Premier Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£1500 - 2000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,1500.0,2000.0,1750.0
-The National Farmers' Union Mutual Insurance Society Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£3000 - 3500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,3000.0,3500.0,3250.0
-Trinity Lane Insurance Company Limited,Excess protection (for motor insurance) (Stand-alone),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Traveljigsaw Insurance Ltd,Excess protection (for motor insurance) (Add-on),95 - 100%,20 - 25%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.2,0.25,0.225,0.0,0.05,0.025,0.0,500.0,250.0
-USAA S.A. UK Branch,Motor (All),95 - 100%,30 - 35%,0 - 5%,£3000 - 3500,2022,0.95,1.0,0.975,0.3,0.35,0.325,0.0,0.05,0.025,3000.0,3500.0,3250.0
-AA Underwriting Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£2000 - 2500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,2000.0,2500.0,2250.0
-Acasta European Insurance Company Limited,Excess protection (for motor insurance) (Stand-alone),95 - 100%,0 - 5%,0 - 5%,£2000 - 2500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
-Zurich Insurance PLC,Excess protection (for motor insurance) (Stand-alone),95 - 100%,20 - 25%,0 - 5%,£500 - 1000,2022,0.95,1.0,0.975,0.2,0.25,0.225,0.0,0.05,0.025,500.0,1000.0,750.0
+AXA Insurance Designated Activity Company,Motor (All),95 - 100%,5 - 10%,5 - 10%,£5500 - 6000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,5500.0,6000.0,5750.0
+AXA Insurance UK Plc,Home - (buildings and contents combined) (All),70 - 75%,5 - 10%,15 - 20%,£4500 - 5000,2023,0.7,0.75,0.725,0.05,0.1,0.075,0.15,0.2,0.175,4500.0,5000.0,4750.0
+AXA Insurance UK Plc,Motor (All),95 - 100%,5 - 10%,15 - 20%,£3500 - 4000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.15,0.2,0.175,3500.0,4000.0,3750.0
+AXA Insurance UK Plc,Motor cycle (All),95 - 100%,0 - 5%,15 - 20%,£6000 - 6500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.15,0.2,0.175,6000.0,6500.0,6250.0
+Brit Syndicates Limited,Home - (buildings and contents combined) (All),95 - 100%,0 - 5%,0 - 5%,£20500 - 21000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,20500.0,21000.0,20750.0
+Bspoke Lifestyle Ltd,Home - (buildings and contents combined) (All),85 - 90%,15 - 20%,0 - 5%,£3500 - 4000,2023,0.85,0.9,0.875,0.15,0.2,0.175,0.0,0.05,0.025,3500.0,4000.0,3750.0
+Bspoke Underwriting Ltd,Home - (buildings and contents combined) (All),60 - 65%,0 - 5%,20 - 25%,£7000 - 7500,2023,0.6,0.65,0.625,0.0,0.05,0.025,0.2,0.25,0.225,7000.0,7500.0,7250.0
+Business Insurance Solutions Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£3000 - 3500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,3000.0,3500.0,3250.0
+Canopius Managing Agents Limited,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,5 - 10%,£2500 - 3000,2023,0.75,0.8,0.775,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Alwyn Insurance Company Limited,Motor cycle (All),95 - 100%,15 - 20%,0 - 5%,£3000 - 3500,2023,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,3000.0,3500.0,3250.0
+AA Underwriting Insurance Company Limited,Home - (buildings and contents combined) (All),60 - 65%,0 - 5%,15 - 20%,£5000 - 5500,2023,0.6,0.65,0.625,0.0,0.05,0.025,0.15,0.2,0.175,5000.0,5500.0,5250.0
+AA Underwriting Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£2000 - 2500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,2000.0,2500.0,2250.0
+AMERICAN INTERNATIONAL GROUP UK LIMITED,Home - (buildings and contents combined) (All),95 - 100%,15 - 20%,0 - 5%,£26000 - 26500,2023,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,26000.0,26500.0,26250.0
+AMERICAN INTERNATIONAL GROUP UK LIMITED,Motor (All),95 - 100%,5 - 10%,0 - 5%,£15000 - 15500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,15000.0,15500.0,15250.0
+Arkel Limited,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,10 - 15%,£4500 - 5000,2023,0.9,0.95,0.925,0.0,0.05,0.025,0.1,0.15,0.125,4500.0,5000.0,4750.0
+Aviva Insurance Limited,Home - (buildings and contents combined) (All),70 - 75%,5 - 10%,10 - 15%,£4500 - 5000,2023,0.7,0.75,0.725,0.05,0.1,0.075,0.1,0.15,0.125,4500.0,5000.0,4750.0
+Aviva Insurance Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Aviva Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£9000 - 9500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,9000.0,9500.0,9250.0
+AXA Insurance Designated Activity Company,Home - (buildings and contents combined) (All),65 - 70%,0 - 5%,15 - 20%,£9000 - 9500,2023,0.65,0.7,0.675,0.0,0.05,0.025,0.15,0.2,0.175,9000.0,9500.0,9250.0
+Advantage Insurance Company Limited,Home - (buildings and contents combined) (All),60 - 65%,0 - 5%,15 - 20%,£4500 - 5000,2023,0.6,0.65,0.625,0.0,0.05,0.025,0.15,0.2,0.175,4500.0,5000.0,4750.0
+Advantage Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3500 - 4000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
+Advantage Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£2500 - 3000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Ageas Insurance Limited,Home - (buildings and contents combined) (All),70 - 75%,0 - 5%,10 - 15%,£5500 - 6000,2023,0.7,0.75,0.725,0.0,0.05,0.025,0.1,0.15,0.125,5500.0,6000.0,5750.0
+Ageas Insurance Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3500 - 4000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3500.0,4000.0,3750.0
+Ageas Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£7500 - 8000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,7500.0,8000.0,7750.0
+Aioi Nissay Dowa Insurance UK Limited,Motor (All),95 - 100%,20 - 25%,0 - 5%,£7500 - 8000,2023,0.95,1.0,0.975,0.2,0.25,0.225,0.0,0.05,0.025,7500.0,8000.0,7750.0
+Alwyn Insurance Company Limited,Motor (All),90 - 95%,10 - 15%,0 - 5%,£5000 - 5500,2023,0.9,0.95,0.925,0.1,0.15,0.125,0.0,0.05,0.025,5000.0,5500.0,5250.0
+Able Insurance Services Ltd,Motor (All),95 - 100%,10 - 15%,0 - 5%,£6000 - 6500,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,6000.0,6500.0,6250.0
+Accelerant Insurance Europe SA/NV UK Branch,Home - (buildings and contents combined) (All),95 - 100%,0 - 5%,0 - 5%,£3500 - 4000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
+Accredited Insurance (Europe) Ltd,Home - (buildings and contents combined) (All),60 - 65%,5 - 10%,5 - 10%,£1000 - 1500,2023,0.6,0.65,0.625,0.05,0.1,0.075,0.05,0.1,0.075,1000.0,1500.0,1250.0
+Accredited Insurance (Europe) Ltd,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2500 - 3000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Accredited Insurance (Europe) Ltd,Motor cycle (All),85 - 90%,0 - 5%,5 - 10%,£4000 - 4500,2023,0.85,0.9,0.875,0.0,0.05,0.025,0.05,0.1,0.075,4000.0,4500.0,4250.0
+Acromas Insurance Company Limited,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,5 - 10%,£3500 - 4000,2023,0.75,0.8,0.775,0.0,0.05,0.025,0.05,0.1,0.075,3500.0,4000.0,3750.0
+Acromas Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,10 - 15%,£3000 - 3500,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.1,0.15,0.125,3000.0,3500.0,3250.0
+Action 365 Ltd,Motor (All),95 - 100%,15 - 20%,5 - 10%,£2500 - 3000,2023,0.95,1.0,0.975,0.15,0.2,0.175,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Tradex Insurance Company Limited,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,5 - 10%,£500 - 1000,2023,0.8,0.85,0.825,0.0,0.05,0.025,0.05,0.1,0.075,500.0,1000.0,750.0
+Tradex Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£7500 - 8000,2023,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,7500.0,8000.0,7750.0
+Trinity Lane Insurance Company Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£1500 - 2000,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,1500.0,2000.0,1750.0
+Trinity Lane Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£2000 - 2500,2023,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
+U K Insurance Limited,Home - (buildings and contents combined) (All),80 - 85%,5 - 10%,10 - 15%,£2500 - 3000,2023,0.8,0.85,0.825,0.05,0.1,0.075,0.1,0.15,0.125,2500.0,3000.0,2750.0
+U K Insurance Limited,Motor (All),95 - 100%,10 - 15%,10 - 15%,£3500 - 4000,2023,0.95,1.0,0.975,0.1,0.15,0.125,0.1,0.15,0.125,3500.0,4000.0,3750.0
+Urban Jungle Services Ltd,Home - (buildings and contents combined) (All),50 - 55%,0 - 5%,10 - 15%,£6500 - 7000,2023,0.5,0.55,0.525,0.0,0.05,0.025,0.1,0.15,0.125,6500.0,7000.0,6750.0
 Zurich Insurance PLC,Motor (All),95 - 100%,5 - 10%,0 - 5%,£4000 - 4500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,4000.0,4500.0,4250.0
-Acasta European Insurance Company Limited,Extended warranty - motor (Stand-alone),70 - 75%,5 - 10%,0 - 5%,£0 - 500,2022,0.7,0.75,0.725,0.05,0.1,0.075,0.0,0.05,0.025,0.0,500.0,250.0
-West Bay Insurance Plc,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3500 - 4000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
-Accredited Insurance (Europe) Ltd,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-West Bay Insurance Plc,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Accredited Insurance (Europe) Ltd,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£2500 - 3000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
-West Bay Insurance Plc,Motor cycle (All),95 - 100%,0 - 5%,15 - 20%,£4000 - 4500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.15,0.2,0.175,4000.0,4500.0,4250.0
-Accredited Insurance (Europe) Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Acromas Insurance Company Limited,Before the event legal expenses - motor (All),80 - 85%,0 - 5%,0 - 5%,,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Ageas Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£7000 - 7500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,7000.0,7500.0,7250.0
-USAA Limited,Motor (All),95 - 100%,15 - 20%,0 - 5%,£1000 - 1500,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,1000.0,1500.0,1250.0
-Acromas Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,10 - 15%,£3000 - 3500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.1,0.15,0.125,3000.0,3500.0,3250.0
-United Legal Assistance Limited,Before the event legal expenses - motor (All),90 - 95%,5 - 10%,0 - 5%,,2022,0.9,0.95,0.925,0.05,0.1,0.075,0.0,0.05,0.025,,,
+AA Underwriting Insurance Company Limited,Home - (buildings and contents combined) (All),55 - 60%,0 - 5%,15 - 20%,£3000 - 3500,2022,0.55,0.6,0.575,0.0,0.05,0.025,0.15,0.2,0.175,3000.0,3500.0,3250.0
+Urban Jungle Services Ltd,Home - (buildings and contents combined) (All),65 - 70%,0 - 5%,15 - 20%,£2500 - 3000,2022,0.65,0.7,0.675,0.0,0.05,0.025,0.15,0.2,0.175,2500.0,3000.0,2750.0
+UIA (Insurance) Limited,Home - (buildings and contents combined) (All),70 - 75%,0 - 5%,5 - 10%,£4500 - 5000,2022,0.7,0.75,0.725,0.0,0.05,0.025,0.05,0.1,0.075,4500.0,5000.0,4750.0
 U K Insurance Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
-U K Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Action 365 Ltd,Motor (All),95 - 100%,15 - 20%,5 - 10%,£2000 - 2500,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.05,0.1,0.075,2000.0,2500.0,2250.0
-Trinity Lane Insurance Company Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£1500 - 2000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,1500.0,2000.0,1750.0
+U K Insurance Limited,Home - (buildings and contents combined) (All),85 - 90%,5 - 10%,5 - 10%,£2000 - 2500,2022,0.85,0.9,0.875,0.05,0.1,0.075,0.05,0.1,0.075,2000.0,2500.0,2250.0
 Trinity Lane Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£3000 - 3500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3000.0,3500.0,3250.0
-Advantage Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£2500 - 3000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
-Mulsanne Insurance Company Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Trinity Lane Insurance Company Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£1500 - 2000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,1500.0,2000.0,1750.0
+Tokio Marine Kiln Syndicates Limited,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,0 - 5%,£2500 - 3000,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
+USAA S.A. UK Branch,Motor (All),95 - 100%,30 - 35%,0 - 5%,£3000 - 3500,2022,0.95,1.0,0.975,0.3,0.35,0.325,0.0,0.05,0.025,3000.0,3500.0,3250.0
+USAA Limited,Motor (All),95 - 100%,15 - 20%,0 - 5%,£1000 - 1500,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,1000.0,1500.0,1250.0
+Alwyn Insurance Company Limited,Motor cycle (All),95 - 100%,65 - 70%,0 - 5%,£4500 - 5000,2022,0.95,1.0,0.975,0.65,0.7,0.675,0.0,0.05,0.025,4500.0,5000.0,4750.0
+Alwyn Insurance Company Limited,Motor (All),90 - 95%,10 - 15%,0 - 5%,£4000 - 4500,2022,0.9,0.95,0.925,0.1,0.15,0.125,0.0,0.05,0.025,4000.0,4500.0,4250.0
+Aioi Nissay Dowa Insurance UK Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£10000 - 10500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,10000.0,10500.0,10250.0
+Ageas Insurance Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3500 - 4000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3500.0,4000.0,3750.0
+Ageas Insurance Limited,Home - (buildings and contents combined) (All),65 - 70%,0 - 5%,5 - 10%,£4500 - 5000,2022,0.65,0.7,0.675,0.0,0.05,0.025,0.05,0.1,0.075,4500.0,5000.0,4750.0
+Ageas Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£7000 - 7500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,7000.0,7500.0,7250.0
 Advantage Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£2500 - 3000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,2500.0,3000.0,2750.0
-Amtrust Europe Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Motorway Direct Ltd,Extended warranty - motor (Add-on),85 - 90%,5 - 10%,0 - 5%,£500 - 1000,2022,0.85,0.9,0.875,0.05,0.1,0.075,0.0,0.05,0.025,500.0,1000.0,750.0
-Arc Legal Assistance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-MS Amlin Insurance SE,Motor (All),90 - 95%,0 - 5%,0 - 5%,£1500 - 2000,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,1500.0,2000.0,1750.0
-Hiscox Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£8000 - 8500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,8000.0,8500.0,8250.0
-Business Insurance Solutions Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£3000 - 3500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,3000.0,3500.0,3250.0
-Highway Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2000 - 2500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2000.0,2500.0,2250.0
-China Taiping Insurance (UK) Co Ltd,Motor (All),95 - 100%,0 - 5%,0 - 5%,£3500 - 4000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Highway Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£3500 - 4000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Chubb European Group SE,Motor (All),95 - 100%,30 - 35%,0 - 5%,£5000 - 5500,2022,0.95,1.0,0.975,0.3,0.35,0.325,0.0,0.05,0.025,5000.0,5500.0,5250.0
-HDI Global Specialty SE,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Haven Insurance Company Limited,Motor (All),95 - 100%,25 - 30%,5 - 10%,£3500 - 4000,2022,0.95,1.0,0.975,0.25,0.3,0.275,0.05,0.1,0.075,3500.0,4000.0,3750.0
-Collingwood Insurance Company Ltd,Motor (All),80 - 85%,0 - 5%,0 - 5%,£3500 - 4000,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
-Haven Insurance Company Limited,Before the event legal expenses - motor (All),95 - 100%,10 - 15%,0 - 5%,,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,,,
-Consilium Insurance Brokers Limited,Extended warranty - motor (Add-on),80 - 85%,25 - 30%,0 - 5%,£500 - 1000,2022,0.8,0.85,0.825,0.25,0.3,0.275,0.0,0.05,0.025,500.0,1000.0,750.0
-Great Lakes Insurance SE,Motor (All),95 - 100%,15 - 20%,0 - 5%,£4000 - 4500,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,4000.0,4500.0,4250.0
-Cornish Mutual Assurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3000 - 3500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3000.0,3500.0,3250.0
-Fortegra Europe Insurance Company Ltd,Extended warranty - motor (Stand-alone),75 - 80%,15 - 20%,0 - 5%,£0 - 500,2022,0.75,0.8,0.775,0.15,0.2,0.175,0.0,0.05,0.025,0.0,500.0,250.0
-Fortegra Europe Insurance Company Ltd,Excess protection (for motor insurance) (Stand-alone),95 - 100%,10 - 15%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,0.0,500.0,250.0
-First Underwriting Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2000 - 2500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2000.0,2500.0,2250.0
-First Underwriting Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£2500 - 3000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
-First Central Insurance Management Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Financial & Legal Insurance Company Ltd,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-EUI Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
-EUI Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Covea Insurance plc,Before the event legal expenses - motor (All),90 - 95%,0 - 5%,0 - 5%,,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,,,
-esure Insurance Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3000 - 3500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3000.0,3500.0,3250.0
-esure Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-DAS Legal Expenses Insurance Company Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Inter Partner Assistance SA,Excess protection (for motor insurance) (Stand-alone),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Able Insurance Services Ltd,Motor (All),80 - 85%,0 - 5%,0 - 5%,£3500 - 4000,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
-AXA Insurance UK Plc,Motor (All),95 - 100%,10 - 15%,5 - 10%,£2500 - 3000,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,2500.0,3000.0,2750.0
-Aviva Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£7500 - 8000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,7500.0,8000.0,7750.0
-Arc Legal Assistance Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£500 - 1000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,500.0,1000.0,750.0
-Covea Insurance plc,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
-Arch Managing Agency Limited,Extended warranty - motor (Stand-alone),75 - 80%,25 - 30%,0 - 5%,£500 - 1000,2022,0.75,0.8,0.775,0.25,0.3,0.275,0.0,0.05,0.025,500.0,1000.0,750.0
-Motors Insurance Company Limited,Extended warranty - motor (Stand-alone),85 - 90%,40 - 45%,0 - 5%,£500 - 1000,2022,0.85,0.9,0.875,0.4,0.45,0.425,0.0,0.05,0.025,500.0,1000.0,750.0
-Motors Insurance Company Limited,Extended warranty - motor (Add-on),80 - 85%,15 - 20%,0 - 5%,£500 - 1000,2022,0.8,0.85,0.825,0.15,0.2,0.175,0.0,0.05,0.025,500.0,1000.0,750.0
-Astrenska Insurance Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£500 - 1000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,500.0,1000.0,750.0
-AutoProtect (MBI) Ltd,Extended warranty - motor (Stand-alone),60 - 65%,25 - 30%,0 - 5%,£0 - 500,2022,0.6,0.65,0.625,0.25,0.3,0.275,0.0,0.05,0.025,0.0,500.0,250.0
-Midas Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,5 - 10%,£4000 - 4500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,4000.0,4500.0,4250.0
-Aviva Insurance Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-Marshmallow Insurance Limited,Motor (All),95 - 100%,15 - 20%,0 - 5%,£4000 - 4500,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,4000.0,4500.0,4250.0
-London General Insurance Company Limited,Extended warranty - motor (Stand-alone),70 - 75%,25 - 30%,10 - 15%,£1000 - 1500,2022,0.7,0.75,0.725,0.25,0.3,0.275,0.1,0.15,0.125,1000.0,1500.0,1250.0
-Aviva Insurance Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
-Inter Partner Assistance SA,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
-Liverpool Victoria Insurance Company Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£1500 - 2000,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,1500.0,2000.0,1750.0
-Liverpool Victoria Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£4000 - 4500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,4000.0,4500.0,4250.0
-Liverpool Victoria Insurance Company Limited,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-AWP Assistance UK Ltd,Extended warranty - motor (Stand-alone),95 - 100%,10 - 15%,0 - 5%,£500 - 1000,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,500.0,1000.0,750.0
-KGM Underwriting Services Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2000 - 2500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
+Advantage Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£2500 - 3000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Advantage Insurance Company Limited,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,15 - 20%,£3000 - 3500,2022,0.75,0.8,0.775,0.0,0.05,0.025,0.15,0.2,0.175,3000.0,3500.0,3250.0
+Action 365 Ltd,Motor (All),95 - 100%,15 - 20%,5 - 10%,£2000 - 2500,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.05,0.1,0.075,2000.0,2500.0,2250.0
+Acromas Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,10 - 15%,£3000 - 3500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.1,0.15,0.125,3000.0,3500.0,3250.0
+Acromas Insurance Company Limited,Home - (buildings and contents combined) (All),70 - 75%,0 - 5%,5 - 10%,£2500 - 3000,2022,0.7,0.75,0.725,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Accredited Insurance (Europe) Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Accredited Insurance (Europe) Ltd,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,5 - 10%,£2000 - 2500,2022,0.75,0.8,0.775,0.0,0.05,0.025,0.05,0.1,0.075,2000.0,2500.0,2250.0
+Accredited Insurance (Europe) Ltd,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£2500 - 3000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
+Accelerant Agency Limited,Home - (buildings and contents combined) (All),95 - 100%,0 - 5%,0 - 5%,£4000 - 4500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,4000.0,4500.0,4250.0
 AXA Insurance Designated Activity Company,Motor (All),95 - 100%,5 - 10%,5 - 10%,£6000 - 6500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,6000.0,6500.0,6250.0
-KGM Underwriting Services Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£1500 - 2000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,1500.0,2000.0,1750.0
-IQUW Syndicate Management Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£4500 - 5000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,4500.0,5000.0,4750.0
-AXA Insurance UK Plc,Before the event legal expenses - motor (All),95 - 100%,0 - 5%,0 - 5%,,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,,,
-IQUW Syndicate Management Limited,Motor cycle (All),95 - 100%,0 - 5%,35 - 40%,£29000 - 29500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.35,0.4,0.375,29000.0,29500.0,29250.0
+AXA Insurance Designated Activity Company,Home - (buildings and contents combined) (All),55 - 60%,0 - 5%,10 - 15%,£7500 - 8000,2022,0.55,0.6,0.575,0.0,0.05,0.025,0.1,0.15,0.125,7500.0,8000.0,7750.0
+Aviva Insurance Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£7500 - 8000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,7500.0,8000.0,7750.0
+Aviva Insurance Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
+Aviva Insurance Limited,Home - (buildings and contents combined) (All),70 - 75%,5 - 10%,5 - 10%,£3500 - 4000,2022,0.7,0.75,0.725,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
+Arkel Limited,Home - (buildings and contents combined) (All),85 - 90%,0 - 5%,0 - 5%,£3500 - 4000,2022,0.85,0.9,0.875,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
+AMERICAN INTERNATIONAL GROUP UK LIMITED,Motor (All),95 - 100%,10 - 15%,0 - 5%,£9000 - 9500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,9000.0,9500.0,9250.0
+QIC Europe Ltd,Home - (buildings and contents combined) (All),65 - 70%,0 - 5%,5 - 10%,£1500 - 2000,2022,0.65,0.7,0.675,0.0,0.05,0.025,0.05,0.1,0.075,1500.0,2000.0,1750.0
+Pro MGA Solutions Ltd,Home - (buildings and contents combined) (All),75 - 80%,5 - 10%,0 - 5%,£7500 - 8000,2022,0.75,0.8,0.775,0.05,0.1,0.075,0.0,0.05,0.025,7500.0,8000.0,7750.0
+Able Insurance Services Ltd,Motor (All),80 - 85%,0 - 5%,0 - 5%,£3500 - 4000,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
+AA Underwriting Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£2000 - 2500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,2000.0,2500.0,2250.0
+Zurich Insurance PLC,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,5 - 10%,£9000 - 9500,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.05,0.1,0.075,9000.0,9500.0,9250.0
+West Bay Insurance Plc,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3500 - 4000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
+West Bay Insurance Plc,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,10 - 15%,£2500 - 3000,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.1,0.15,0.125,2500.0,3000.0,2750.0
+West Bay Insurance Plc,Motor cycle (All),95 - 100%,0 - 5%,15 - 20%,£4000 - 4500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.15,0.2,0.175,4000.0,4500.0,4250.0
+AMERICAN INTERNATIONAL GROUP UK LIMITED,Home - (buildings and contents combined) (All),95 - 100%,15 - 20%,0 - 5%,£25000 - 25500,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,25000.0,25500.0,25250.0
+Canopius Managing Agents Limited,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,5 - 10%,£3500 - 4000,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.05,0.1,0.075,3500.0,4000.0,3750.0
+Business Insurance Solutions Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£3000 - 3500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,3000.0,3500.0,3250.0
+Bspoke Underwriting Ltd,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,10 - 15%,£4000 - 4500,2022,0.75,0.8,0.775,0.0,0.05,0.025,0.1,0.15,0.125,4000.0,4500.0,4250.0
+Brit Syndicates Limited,Home - (buildings and contents combined) (All),95 - 100%,0 - 5%,0 - 5%,£6000 - 6500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,6000.0,6500.0,6250.0
 AXA Insurance UK Plc,Motor cycle (All),95 - 100%,0 - 5%,15 - 20%,£5500 - 6000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.15,0.2,0.175,5500.0,6000.0,5750.0
-One Insurance Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
+AXA Insurance UK Plc,Motor (All),95 - 100%,10 - 15%,5 - 10%,£2500 - 3000,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,2500.0,3000.0,2750.0
+AXA Insurance UK Plc,Home - (buildings and contents combined) (All),75 - 80%,5 - 10%,15 - 20%,£3500 - 4000,2022,0.75,0.8,0.775,0.05,0.1,0.075,0.15,0.2,0.175,3500.0,4000.0,3750.0
+Covea Insurance plc,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,5 - 10%,£2000 - 2500,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.05,0.1,0.075,2000.0,2500.0,2250.0
+Cornish Mutual Assurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£3000 - 3500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,3000.0,3500.0,3250.0
+Cornish Mutual Assurance Company Limited,Home - (buildings and contents combined) (All),95 - 100%,5 - 10%,0 - 5%,£4000 - 4500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,4000.0,4500.0,4250.0
+Collingwood Insurance Company Ltd,Motor (All),80 - 85%,0 - 5%,0 - 5%,£3500 - 4000,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
+Chubb European Group SE,Motor (All),95 - 100%,30 - 35%,0 - 5%,£5000 - 5500,2022,0.95,1.0,0.975,0.3,0.35,0.325,0.0,0.05,0.025,5000.0,5500.0,5250.0
+Chubb European Group SE,Home - (buildings and contents combined) (All),95 - 100%,15 - 20%,0 - 5%,£18500 - 19000,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,18500.0,19000.0,18750.0
+China Taiping Insurance (UK) Co Ltd,Motor (All),95 - 100%,0 - 5%,0 - 5%,£3500 - 4000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
+IQUW Syndicate Management Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£4500 - 5000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,4500.0,5000.0,4750.0
+IQUW Syndicate Management Limited,Motor cycle (All),95 - 100%,0 - 5%,35 - 40%,£29000 - 29500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.35,0.4,0.375,29000.0,29500.0,29250.0
+The Salvation Army General Insurance Corporation Ltd,Home - (buildings and contents combined) (All),90 - 95%,5 - 10%,0 - 5%,£3500 - 4000,2022,0.9,0.95,0.925,0.05,0.1,0.075,0.0,0.05,0.025,3500.0,4000.0,3750.0
+The National Farmers' Union Mutual Insurance Society Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£3000 - 3500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,3000.0,3500.0,3250.0
+The National Farmers' Union Mutual Insurance Society Limited,Home - (buildings and contents combined) (All),90 - 95%,10 - 15%,0 - 5%,£7000 - 7500,2022,0.9,0.95,0.925,0.1,0.15,0.125,0.0,0.05,0.025,7000.0,7500.0,7250.0
+Tesco Personal Finance PLC,Motor (All),95 - 100%,5 - 10%,5 - 10%,£5500 - 6000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,5500.0,6000.0,5750.0
+Tesco Personal Finance PLC,Home - (buildings and contents combined) (All),85 - 90%,0 - 5%,5 - 10%,£3500 - 4000,2022,0.85,0.9,0.875,0.0,0.05,0.025,0.05,0.1,0.075,3500.0,4000.0,3750.0
+SCOR Managing Agency Ltd,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,0 - 5%,£9000 - 9500,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,9000.0,9500.0,9250.0
+Sabre Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£8000 - 8500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,8000.0,8500.0,8250.0
+Sabre Insurance Company Limited,Motor cycle (All),95 - 100%,5 - 10%,0 - 5%,£1000 - 1500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,1000.0,1500.0,1250.0
+Royal & Sun Alliance Insurance Limited,Motor (All),95 - 100%,15 - 20%,0 - 5%,£4500 - 5000,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,4500.0,5000.0,4750.0
+Royal & Sun Alliance Insurance Limited,Home - (buildings and contents combined) (All),70 - 75%,5 - 10%,5 - 10%,£3500 - 4000,2022,0.7,0.75,0.725,0.05,0.1,0.075,0.05,0.1,0.075,3500.0,4000.0,3750.0
+QIC Europe Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£1000 - 1500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,1000.0,1500.0,1250.0
+China Taiping Insurance (UK) Co Ltd,Home - (buildings and contents combined) (All),95 - 100%,5 - 10%,0 - 5%,£500 - 1000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,500.0,1000.0,750.0
+EUI Limited,Motor (All),95 - 100%,10 - 15%,5 - 10%,£3000 - 3500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.05,0.1,0.075,3000.0,3500.0,3250.0
+EUI Limited,Home - (buildings and contents combined) (All),65 - 70%,5 - 10%,5 - 10%,£2000 - 2500,2022,0.65,0.7,0.675,0.05,0.1,0.075,0.05,0.1,0.075,2000.0,2500.0,2250.0
+esure Insurance Limited,Motor (All),95 - 100%,5 - 10%,5 - 10%,£3000 - 3500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,3000.0,3500.0,3250.0
+esure Insurance Limited,Home - (buildings and contents combined) (All),60 - 65%,0 - 5%,5 - 10%,£4500 - 5000,2022,0.6,0.65,0.625,0.0,0.05,0.025,0.05,0.1,0.075,4500.0,5000.0,4750.0
+Ecclesiastical Insurance Office Plc,Home - (buildings and contents combined) (All),90 - 95%,5 - 10%,0 - 5%,£9500 - 10000,2022,0.9,0.95,0.925,0.05,0.1,0.075,0.0,0.05,0.025,9500.0,10000.0,9750.0
+Cuvva Limited,Motor (All),90 - 95%,5 - 10%,0 - 5%,£1500 - 2000,2022,0.9,0.95,0.925,0.05,0.1,0.075,0.0,0.05,0.025,1500.0,2000.0,1750.0
+Covea Insurance plc,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2500 - 3000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Great Lakes Insurance SE,Motor (All),95 - 100%,15 - 20%,0 - 5%,£4000 - 4500,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,4000.0,4500.0,4250.0
+Great Lakes Insurance SE,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,5 - 10%,£8500 - 9000,2022,0.75,0.8,0.775,0.0,0.05,0.025,0.05,0.1,0.075,8500.0,9000.0,8750.0
+Geo Underwriting Services Limited,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,10 - 15%,£3500 - 4000,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.1,0.15,0.125,3500.0,4000.0,3750.0
+Frontier Insurance Solutions LTD,Home - (buildings and contents combined) (All),85 - 90%,5 - 10%,0 - 5%,£4000 - 4500,2022,0.85,0.9,0.875,0.05,0.1,0.075,0.0,0.05,0.025,4000.0,4500.0,4250.0
+Frank Pickles Insurance Brokers Limited,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,0 - 5%,£2000 - 2500,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
+First Underwriting Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£2500 - 3000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,2500.0,3000.0,2750.0
+First Underwriting Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2000 - 2500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2000.0,2500.0,2250.0
+First Underwriting Limited,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,0 - 5%,£2000 - 2500,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
+Premier Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,0 - 5%,£1500 - 2000,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,1500.0,2000.0,1750.0
+Plum Underwriting Limited,Home - (buildings and contents combined) (All),80 - 85%,5 - 10%,0 - 5%,£13000 - 13500,2022,0.8,0.85,0.825,0.05,0.1,0.075,0.0,0.05,0.025,13000.0,13500.0,13250.0
+Munich Re Syndicate Limited,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,5 - 10%,£9000 - 9500,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.05,0.1,0.075,9000.0,9500.0,9250.0
+Mulsanne Insurance Company Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
+MS Amlin Insurance SE,Motor (All),90 - 95%,0 - 5%,0 - 5%,£1500 - 2000,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.0,0.05,0.025,1500.0,2000.0,1750.0
+Midas Underwriting Ltd,Motor (All),95 - 100%,5 - 10%,5 - 10%,£4000 - 4500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,4000.0,4500.0,4250.0
+Midas Underwriting Ltd,Home - (buildings and contents combined) (All),90 - 95%,0 - 5%,10 - 15%,£7000 - 7500,2022,0.9,0.95,0.925,0.0,0.05,0.025,0.1,0.15,0.125,7000.0,7500.0,7250.0
+Marshmallow Insurance Limited,Motor (All),95 - 100%,15 - 20%,0 - 5%,£4000 - 4500,2022,0.95,1.0,0.975,0.15,0.2,0.175,0.0,0.05,0.025,4000.0,4500.0,4250.0
+Lloyds Bank General Insurance Limited,Home - (buildings and contents combined) (All),60 - 65%,5 - 10%,10 - 15%,£4000 - 4500,2022,0.6,0.65,0.625,0.05,0.1,0.075,0.1,0.15,0.125,4000.0,4500.0,4250.0
+Liverpool Victoria Insurance Company Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£1500 - 2000,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,1500.0,2000.0,1750.0
+Liverpool Victoria Insurance Company Limited,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,0 - 5%,£2000 - 2500,2022,0.75,0.8,0.775,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
+Liverpool Victoria Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£4000 - 4500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,4000.0,4500.0,4250.0
+KGM Underwriting Services Limited,Motor (All),95 - 100%,0 - 5%,0 - 5%,£2000 - 2500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,2000.0,2500.0,2250.0
+KGM Underwriting Services Limited,Motor cycle (All),95 - 100%,0 - 5%,5 - 10%,£1500 - 2000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.05,0.1,0.075,1500.0,2000.0,1750.0
+First Central Insurance Management Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2500 - 3000,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Hiscox Insurance Company Limited,Home - (buildings and contents combined) (All),95 - 100%,5 - 10%,5 - 10%,£20000 - 20500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.05,0.1,0.075,20000.0,20500.0,20250.0
+Highway Insurance Company Limited,Motor cycle (All),95 - 100%,0 - 5%,0 - 5%,£3500 - 4000,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,3500.0,4000.0,3750.0
+Highway Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£2000 - 2500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,2000.0,2500.0,2250.0
+Highway Insurance Company Limited,Home - (buildings and contents combined) (All),80 - 85%,0 - 5%,0 - 5%,£2500 - 3000,2022,0.8,0.85,0.825,0.0,0.05,0.025,0.0,0.05,0.025,2500.0,3000.0,2750.0
+Haven Insurance Company Limited,Motor (All),95 - 100%,25 - 30%,5 - 10%,£3500 - 4000,2022,0.95,1.0,0.975,0.25,0.3,0.275,0.05,0.1,0.075,3500.0,4000.0,3750.0
+Haven Insurance Company Limited,Home - (buildings and contents combined) (All),80 - 85%,5 - 10%,15 - 20%,£3500 - 4000,2022,0.8,0.85,0.825,0.05,0.1,0.075,0.15,0.2,0.175,3500.0,4000.0,3750.0
+Gresham Insurance Company Limited,Home - (buildings and contents combined) (All),75 - 80%,10 - 15%,5 - 10%,£2000 - 2500,2022,0.75,0.8,0.775,0.1,0.15,0.125,0.05,0.1,0.075,2000.0,2500.0,2250.0
+Integra Insurance Solutions Limited,Home - (buildings and contents combined) (All),75 - 80%,0 - 5%,5 - 10%,£4000 - 4500,2022,0.75,0.8,0.775,0.0,0.05,0.025,0.05,0.1,0.075,4000.0,4500.0,4250.0
+Hiscox Insurance Company Limited,Motor (All),95 - 100%,5 - 10%,0 - 5%,£8000 - 8500,2022,0.95,1.0,0.975,0.05,0.1,0.075,0.0,0.05,0.025,8000.0,8500.0,8250.0
 One Insurance Limited,Motor (All),95 - 100%,10 - 15%,0 - 5%,£2000 - 2500,2022,0.95,1.0,0.975,0.1,0.15,0.125,0.0,0.05,0.025,2000.0,2500.0,2250.0
-Cover Genius Limited,Excess protection (for motor insurance) (Add-on),95 - 100%,0 - 5%,0 - 5%,£0 - 500,2022,0.95,1.0,0.975,0.0,0.05,0.025,0.0,0.05,0.025,0.0,500.0,250.0
