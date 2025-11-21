@@ -1,25 +1,14 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { fetchValueMeasures } from './DashboardService';
-import {
-    BarChart,
-    Bar,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend,
-    ResponsiveContainer,
-    LineChart,
-    Line
-} from 'recharts';
+// Chart imports removed as we are switching to table view
 import './Dashboard.css';
 
 const DashboardPage = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [selectedYear, setSelectedYear] = useState('All');
-    const [selectedMetric, setSelectedMetric] = useState('Claims acceptance rate');
+    const [selectedYear, setSelectedYear] = useState(null);
+    const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
 
     useEffect(() => {
         const loadData = async () => {
@@ -37,35 +26,79 @@ const DashboardPage = () => {
     }, []);
 
     const years = useMemo(() => {
-        const uniqueYears = [...new Set(data.map(item => item.Year))];
-        return ['All', ...uniqueYears.sort()];
-    }, [data]);
+        const uniqueYears = [...new Set(data.map(item => item.year))];
+        const sortedYears = uniqueYears.sort().reverse();
 
-    const filteredData = useMemo(() => {
-        if (selectedYear === 'All') return data;
-        return data.filter(item => item.Year.toString() === selectedYear.toString());
+        // Set default year if not set
+        if (!selectedYear && sortedYears.length > 0) {
+            setSelectedYear(sortedYears[0]);
+        }
+
+        return sortedYears;
     }, [data, selectedYear]);
 
-    // Prepare data for charts
-    // Top 10 firms by selected metric
-    const topFirmsData = useMemo(() => {
-        let sorted = [...filteredData].sort((a, b) => {
-            // Handle numeric parsing if needed, assuming data is clean or parsed in backend
-            // But based on user request, we might need to parse strings like "95%" or "1000-1500"
-            // For now, let's assume the backend or service returns raw strings and we might need to parse here if not done in ETL.
-            // The user said "I already generate cleaned dataset... in json format".
-            // Let's assume the JSON has numeric values for _mid columns or similar if they exist, or we parse.
-            // Looking at the user prompt, they mentioned "Compute or parse numeric metrics...".
-            // Let's try to use the numeric columns if they exist.
-            // If the JSON has 'Claims acceptance rate', it might be a string.
-            // Let's assume we use a simple sort for now or try to parse.
+    const sortedData = useMemo(() => {
+        let sortableItems = [...data];
 
-            const valA = parseFloat(String(a[selectedMetric]).replace('%', '')) || 0;
-            const valB = parseFloat(String(b[selectedMetric]).replace('%', '')) || 0;
-            return valB - valA; // Descending
-        });
-        return sorted.slice(0, 10);
-    }, [filteredData, selectedMetric]);
+        // Filter by year first
+        // Filter by year first
+        if (selectedYear) {
+            sortableItems = sortableItems.filter(item => item.year.toString() === selectedYear.toString());
+        }
+
+        // Then sort
+        if (sortConfig.key) {
+            sortableItems.sort((a, b) => {
+                let aValue = a[sortConfig.key];
+                let bValue = b[sortConfig.key];
+
+                // Handle numeric comparisons for specific columns if needed, 
+                // but the JSON seems to have specific fields like _mid for sorting if we wanted to use them.
+                // For now, let's use the display fields or the _mid fields if available for better sorting.
+                // Based on the JSON structure seen:
+                // acceptance_rate -> acceptance_rate_mid
+                // claims_frequency -> claims_frequency_mid
+                // complaints_rate -> complaints_rate_mid
+                // avg_payout -> avg_payout_mid
+
+                const sortKeyMap = {
+                    'acceptance_rate': 'acceptance_rate_mid',
+                    'claims_frequency': 'claims_frequency_mid',
+                    'complaints_rate': 'complaints_rate_mid',
+                    'avg_payout': 'avg_payout_mid'
+                };
+
+                const actualKey = sortKeyMap[sortConfig.key] || sortConfig.key;
+
+                aValue = a[actualKey];
+                bValue = b[actualKey];
+
+                if (aValue < bValue) {
+                    return sortConfig.direction === 'ascending' ? -1 : 1;
+                }
+                if (aValue > bValue) {
+                    return sortConfig.direction === 'ascending' ? 1 : -1;
+                }
+                return 0;
+            });
+        }
+        return sortableItems;
+    }, [data, selectedYear, sortConfig]);
+
+    const requestSort = (key) => {
+        let direction = 'ascending';
+        if (sortConfig.key === key && sortConfig.direction === 'ascending') {
+            direction = 'descending';
+        }
+        setSortConfig({ key, direction });
+    };
+
+    const getSortIndicator = (name) => {
+        if (sortConfig.key !== name) {
+            return <span className="sort-indicator">⇅</span>;
+        }
+        return sortConfig.direction === 'ascending' ? <span className="sort-indicator">↑</span> : <span className="sort-indicator">↓</span>;
+    };
 
     if (loading) return <div className="dashboard-loading">Loading market data...</div>;
     if (error) return <div className="dashboard-error">{error}</div>;
@@ -86,33 +119,37 @@ const DashboardPage = () => {
                         ))}
                     </select>
                 </div>
-                <div className="control-group">
-                    <label>Metric:</label>
-                    <select value={selectedMetric} onChange={(e) => setSelectedMetric(e.target.value)}>
-                        <option value="Claims acceptance rate">Claims Acceptance Rate</option>
-                        <option value="Claims frequency">Claims Frequency</option>
-                        <option value="Average claims payout">Average Payout</option>
-                        <option value="Complaints">Complaints Rate</option>
-                    </select>
-                </div>
             </div>
 
-            <div className="dashboard-charts">
-                <div className="chart-card">
-                    <h2>Top 10 Firms by {selectedMetric} ({selectedYear})</h2>
-                    <div className="chart-wrapper">
-                        <ResponsiveContainer width="100%" height={400}>
-                            <BarChart data={topFirmsData} layout="vertical" margin={{ left: 50 }}>
-                                <CartesianGrid strokeDasharray="3 3" />
-                                <XAxis type="number" />
-                                <YAxis dataKey="Firm name" type="category" width={150} style={{ fontSize: '12px' }} />
-                                <Tooltip />
-                                <Legend />
-                                <Bar dataKey={selectedMetric} fill="#8884d8" name={selectedMetric} />
-                            </BarChart>
-                        </ResponsiveContainer>
-                    </div>
-                </div>
+            <div className="dashboard-table-container">
+                <table className="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th onClick={() => requestSort('manufacturer')}>Manufacturer {getSortIndicator('manufacturer')}</th>
+                            <th onClick={() => requestSort('product_type')}>Product Type {getSortIndicator('product_type')}</th>
+                            <th onClick={() => requestSort('year')}>Year {getSortIndicator('year')}</th>
+                            <th onClick={() => requestSort('acceptance_rate')}>Claims Acceptance Rate {getSortIndicator('acceptance_rate')}</th>
+                            <th onClick={() => requestSort('claims_frequency')}>Claims Frequency {getSortIndicator('claims_frequency')}</th>
+                            <th onClick={() => requestSort('complaints_rate')}>Complaints Rate {getSortIndicator('complaints_rate')}</th>
+                            <th onClick={() => requestSort('avg_payout')}>Avg Payout {getSortIndicator('avg_payout')}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {sortedData.map((item, index) => (
+                            <tr key={index}>
+                                <td>{index + 1}</td>
+                                <td>{item.manufacturer}</td>
+                                <td>{item.product_type}</td>
+                                <td>{item.year}</td>
+                                <td>{item.acceptance_rate}</td>
+                                <td>{item.claims_frequency}</td>
+                                <td>{item.complaints_rate}</td>
+                                <td>{item.avg_payout || 'N/A'}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             </div>
 
             <div className="dashboard-note">
