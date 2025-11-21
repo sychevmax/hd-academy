@@ -2,7 +2,7 @@ name: CI/CD to Azure App Service
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "prod" ]
   workflow_dispatch: {}
 
 jobs:
