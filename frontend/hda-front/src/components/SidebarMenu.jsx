@@ -18,14 +18,14 @@ export default function SidebarMenu({ activeFeature = 'glossary', onSelectFeatur
       <div className="section">
         <div className="section-title">Features</div>
         <ul>
+          <li className={activeFeature === 'dashboard' ? 'active' : ''}>
+            <button className={activeFeature === 'dashboard' ? 'link active' : 'link'} onClick={() => onSelectFeature && onSelectFeature('dashboard')}>Market Dashboard</button>
+          </li>
           <li className={activeFeature === 'glossary' ? 'active' : ''}>
             <button className={activeFeature === 'glossary' ? 'link active' : 'link'} onClick={() => onSelectFeature && onSelectFeature('glossary')}>Glossary</button>
           </li>
           <li className={activeFeature === 'ask' ? 'active' : ''}>
             <button className={activeFeature === 'ask' ? 'link active' : 'link'} onClick={() => onSelectFeature && onSelectFeature('ask')}>Ask AI</button>
-          </li>
-          <li className={activeFeature === 'dashboard' ? 'active' : ''}>
-            <button className={activeFeature === 'dashboard' ? 'link active' : 'link'} onClick={() => onSelectFeature && onSelectFeature('dashboard')}>Market Dashboard</button>
           </li>
           <li className="disabled" title="Coming soon">Learning Paths</li>
           <li className="disabled" title="Coming soon">Quizzes</li>

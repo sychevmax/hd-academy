@@ -12,11 +12,11 @@ function App() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  let activeFeature = 'glossary';
+  let activeFeature = 'dashboard';
   if (location.pathname.startsWith('/ask-ai')) {
     activeFeature = 'ask';
-  } else if (location.pathname.startsWith('/dashboard')) {
-    activeFeature = 'dashboard';
+  } else if (location.pathname.startsWith('/glossary')) {
+    activeFeature = 'glossary';
   }
 
   // Reset category when switching away from glossary to avoid stale UI state
@@ -28,11 +28,11 @@ function App() {
 
   const handleSelectFeature = (feature) => {
     if (feature === 'glossary') {
-      navigate('/');
+      navigate('/glossary');
     } else if (feature === 'ask') {
       navigate('/ask-ai');
     } else if (feature === 'dashboard') {
-      navigate('/dashboard');
+      navigate('/');
     }
   };
 
@@ -48,9 +48,9 @@ function App() {
       }
     >
       <Routes>
-        <Route path="/" element={<GlossaryPage selectedCategory={selectedCategory} />} />
+        <Route path="/" element={<DashboardPage />} />
         <Route path="/ask-ai" element={<AskAiPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/glossary" element={<GlossaryPage selectedCategory={selectedCategory} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Layout>
