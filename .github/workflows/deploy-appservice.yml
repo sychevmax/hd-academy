@@ -41,6 +41,12 @@ jobs:
           mkdir -p ${{ env.BACKEND_DIR }}/src/main/resources/static
           cp -R ${{ env.FRONTEND_DIR }}/build/* ${{ env.BACKEND_DIR }}/src/main/resources/static/
 
+      # Copy static data into backend resources
+      - name: Copy static data to backend resources
+        run: |
+          mkdir -p ${{ env.BACKEND_DIR }}/src/main/resources/data
+          cp data-pipeline/hda-data-tools/data_cleaned/value_measures_motor_clean.json ${{ env.BACKEND_DIR }}/src/main/resources/data/
+
       - name: Set up Java
         uses: actions/setup-java@v4
         with:

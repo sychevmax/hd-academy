@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import SidebarMenu from './components/SidebarMenu';
 import GlossaryPage from './features/glossary/GlossaryPage';
 import AskAiPage from './features/ai/AskAiPage';
+import DashboardPage from './features/dashboard/DashboardPage';
 import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
 
 function App() {
@@ -11,7 +12,12 @@ function App() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const activeFeature = location.pathname.startsWith('/ask-ai') ? 'ask' : 'glossary';
+  let activeFeature = 'dashboard';
+  if (location.pathname.startsWith('/ask-ai')) {
+    activeFeature = 'ask';
+  } else if (location.pathname.startsWith('/glossary')) {
+    activeFeature = 'glossary';
+  }
 
   // Reset category when switching away from glossary to avoid stale UI state
   useEffect(() => {
@@ -22,9 +28,11 @@ function App() {
 
   const handleSelectFeature = (feature) => {
     if (feature === 'glossary') {
-      navigate('/');
+      navigate('/glossary');
     } else if (feature === 'ask') {
       navigate('/ask-ai');
+    } else if (feature === 'dashboard') {
+      navigate('/');
     }
   };
 
@@ -40,8 +48,9 @@ function App() {
       }
     >
       <Routes>
-        <Route path="/" element={<GlossaryPage selectedCategory={selectedCategory} />} />
+        <Route path="/" element={<DashboardPage />} />
         <Route path="/ask-ai" element={<AskAiPage />} />
+        <Route path="/glossary" element={<GlossaryPage selectedCategory={selectedCategory} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Layout>
