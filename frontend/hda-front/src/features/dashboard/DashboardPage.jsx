@@ -8,6 +8,7 @@ const DashboardPage = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [selectedYear, setSelectedYear] = useState(null);
+    const [selectedProductType, setSelectedProductType] = useState('All');
     const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
 
     useEffect(() => {
@@ -37,6 +38,11 @@ const DashboardPage = () => {
         return sortedYears;
     }, [data, selectedYear]);
 
+    const productTypes = useMemo(() => {
+        const uniqueTypes = [...new Set(data.map(item => item.product_type))];
+        return ['All', ...uniqueTypes.sort()];
+    }, [data]);
+
     const sortedData = useMemo(() => {
         let sortableItems = [...data];
 
@@ -44,6 +50,11 @@ const DashboardPage = () => {
         // Filter by year first
         if (selectedYear) {
             sortableItems = sortableItems.filter(item => item.year.toString() === selectedYear.toString());
+        }
+
+        // Filter by product type
+        if (selectedProductType !== 'All') {
+            sortableItems = sortableItems.filter(item => item.product_type === selectedProductType);
         }
 
         // Then sort
@@ -83,7 +94,7 @@ const DashboardPage = () => {
             });
         }
         return sortableItems;
-    }, [data, selectedYear, sortConfig]);
+    }, [data, selectedYear, selectedProductType, sortConfig]);
 
     const requestSort = (key) => {
         let direction = 'ascending';
@@ -116,6 +127,14 @@ const DashboardPage = () => {
                     <select value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
                         {years.map(year => (
                             <option key={year} value={year}>{year}</option>
+                        ))}
+                    </select>
+                </div>
+                <div className="control-group">
+                    <label>Product Type:</label>
+                    <select value={selectedProductType} onChange={(e) => setSelectedProductType(e.target.value)}>
+                        {productTypes.map(type => (
+                            <option key={type} value={type}>{type}</option>
                         ))}
                     </select>
                 </div>
