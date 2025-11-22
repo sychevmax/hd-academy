@@ -12,7 +12,7 @@ This is the backend service for the Hastings Direct Academy project. It provides
 
 ## Architecture
 
-The application is designed as a monolithic service that:
+The application is designed as a service that:
 1.  Exposes REST endpoints for the Insurance Glossary (CRUD operations).
 2.  Serves the React Frontend (bundled).
 3.  Serves static data (JSON) processed by the data pipeline.
@@ -34,13 +34,7 @@ Originally, this project used **Azure SQL Database**. However, to optimize costs
 
 ### Environment Variables
 
-Create a `.env` file in the root of `backend/hda-back/` (or set system env vars):
-
-```properties
-SPRING_DATASOURCE_URL=jdbc:postgresql://<host>:<port>/<database>
-SPRING_DATASOURCE_USERNAME=<user>
-SPRING_DATASOURCE_PASSWORD=<password>
-```
+Create a `.env` file in the root of `backend/hda-back/` (or set system env vars). All variables provided in .env.example file.
 
 ### Running Locally
 
@@ -49,8 +43,9 @@ SPRING_DATASOURCE_PASSWORD=<password>
 ./mvnw spring-boot:run
 ```
 
-The API will be available at `http://localhost:8080`.
-Swagger UI is available at `http://localhost:8080/swagger-ui.html`.
+The API will be available at `http://localhost:8081`.
+Swagger UI is available at `http://localhost:8081/swagger-ui.html`.
+Web app will be available at `http://localhost:8080` with reverse proxy runned with fronted.
 
 ### Building for Production
 
@@ -59,9 +54,3 @@ The build process (handled by GitHub Actions) does the following:
 2.  Copies frontend artifacts to `src/main/resources/static`.
 3.  Copies processed data to `src/main/resources/data`.
 4.  Packages the JAR.
-
-To run the package step manually (skipping tests):
-
-```bash
-./mvnw -B -DskipTests package
-```

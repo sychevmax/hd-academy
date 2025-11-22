@@ -38,8 +38,14 @@ To start the development server:
 npm start
 ```
 
-The application will run at `http://localhost:3000`.
-*Note: To fully function, the backend service should be running on port 8080, or you may need to configure a proxy.*
+To start the reversed proxy:
+
+```bash
+npm run proxy
+```
+
+The application will run at `http://localhost:8080`.
+*Note: To fully function, the backend service should be running on port 8081.*
 
 ## Build
 

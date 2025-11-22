@@ -8,7 +8,7 @@
 
 ## Overview
 
-**HD Academy** is a full-stack educational project designed to demonstrate technical competencies relevant to the **Pricing Automation Engineer** role at Hastings Direct. It explores the motor insurance domain through data processing, a glossary microservice, and modern web technologies.
+**HD Academy** is a full-stack educational project designed to demonstrate technical competencies relevant to the engineering roles at Hastings Direct. It explores the motor insurance domain through data processing, a glossary microservice, and modern web technologies.
 
 ### Live Demo
 👉 [**hd-academy-web.azurewebsites.net**](https://hd-academy-web.azurewebsites.net/)
@@ -40,15 +40,14 @@ This project mimics a modern enterprise stack:
 
 The project is automatically built and deployed via GitHub Actions. The workflow:
 1.  Builds the React frontend.
-2.  Processes the latest data using Python scripts.
-3.  Packages the frontend and data into the Spring Boot JAR.
-4.  Deploys the artifact to Azure App Service.
+2.  Packages the frontend and data into the Spring Boot JAR.
+3.  Deploys the artifact to Azure App Service.
 
 ## About the Author
 
-This project was created by **[Your Name/Github Handle]** to showcase skills in:
+This project was created by **Maksim Sychev** to showcase skills in:
 *   Building scalable web applications.
 *   Automating data pipelines.
 *   Cloud infrastructure and DevOps.
 
-For more details, visit the [About Page](https://hd-academy-web.azurewebsites.net/about) in the application.
+email: sychevmax@gmail.com
