@@ -29,6 +29,9 @@ export default function SidebarMenu({ activeFeature = 'glossary', onSelectFeatur
           </li>
           <li className="disabled" title="Coming soon">Learning Paths</li>
           <li className="disabled" title="Coming soon">Quizzes</li>
+          <li className={activeFeature === 'about' ? 'active' : ''}>
+            <button className={activeFeature === 'about' ? 'link active' : 'link'} onClick={() => onSelectFeature && onSelectFeature('about')}>About Project</button>
+          </li>
         </ul>
       </div>
 
