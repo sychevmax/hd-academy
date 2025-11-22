@@ -12,12 +12,20 @@ export default function AboutPage() {
       <section className="about-section">
         <h2>Project Overview</h2>
         <p>
-          Welcome! This project is my personal playground and portfolio designed to demonstrate the skills and technologies relevant to the <strong>Pricing Automation Engineer</strong> role at Hastings Direct.
+          Welcome! This project is my personal playground and portfolio designed to demonstrate the skills and technologies relevant to the engineering roles at Hastings Direct.
         </p>
         <p>
           My goal was to build a full-stack application that mirrors real-world insurance tech challenges: processing industry data, building robust APIs, and delivering a clean user experience—all automated with CI/CD pipelines.
         </p>
       </section>
+
+        <section className="about-section">
+            <div className="links-grid">
+                <a href="https://github.com/sychevmax/hd-academy" target="_blank" rel="noopener noreferrer" className="link-btn">
+                    View Source Code (GitHub)
+                </a>
+            </div>
+        </section>
 
       <section className="about-section">
         <h2>Tech Stack & Architecture</h2>
@@ -36,7 +44,7 @@ export default function AboutPage() {
               <li><strong>Java 17</strong> & <strong>Spring Boot 3</strong></li>
               <li>Microservice Architecture principles</li>
               <li>RESTful API design</li>
-              <li><strong>PostgreSQL</strong> (Supabase)</li>
+              <li><strong>Azure SQL / PostgreSQL</strong> (Supabase)</li>
             </ul>
           </div>
           <div className="tech-card">
@@ -64,24 +72,14 @@ export default function AboutPage() {
         <div className="migration-note">
           <strong>💰 Architecture Decision: Database Migration</strong>
           <p>
-            Originally, this project was built using <strong>Azure SQL Database</strong> to stay fully within the Azure ecosystem.
-            However, to optimize costs for this educational project, I migrated the persistence layer to <strong>Supabase (PostgreSQL)</strong>.
+            Originally, this project was built using Azure SQL Database to stay fully within the Azure ecosystem.
+            However, to optimize costs for this educational project, I migrated the persistence layer to Supabase (PostgreSQL).
             This migration demonstrated flexibility in handling database drivers, dialects, and connection pooling in a Spring Boot environment.
           </p>
         </div>
       </section>
 
-      <section className="about-section links-section">
-        <h2>Links</h2>
-        <div className="links-grid">
-          <a href="https://github.com/sychevmax/hd-academy" target="_blank" rel="noopener noreferrer" className="link-btn">
-            View Source Code (GitHub)
-          </a>
-          <a href="https://hd-academy-web.azurewebsites.net/" target="_blank" rel="noopener noreferrer" className="link-btn">
-            Live Application
-          </a>
-        </div>
-      </section>
+
     </div>
   );
 }
