@@ -94,6 +94,10 @@
   overflow: auto;
   flex: 1;
   min-height: 300px;
+  width: 100%;
+  /* Ensure it doesn't expand beyond parent */
+  max-width: 100%;
+  /* Double safety */
   /* Prevent collapse on small screens with large headers */
   /* Crucial for nested flex scrolling */
 }
@@ -106,7 +110,8 @@
 
 .dashboard-table th,
 .dashboard-table td {
-  padding: 12px 15px;
+  padding: 8px 10px;
+  /* More compact padding */
   text-align: left;
   border-bottom: 1px solid #eee;
 }
@@ -220,15 +225,55 @@
     font-size: 12px;
   }
 
-  .dashboard-table th,
-  .dashboard-table td {
-    padding: 8px 10px;
+  .dashboard-table th {
     white-space: nowrap;
-    /* Keep cells on one line, scroll instead */
+    /* Force headers to be one line */
   }
 
-  /* Sticky first column for better mobile experience if desired, 
-     but user just asked for compact view. Let's stick to compact. */
+  .dashboard-table td {
+    padding: 8px 10px;
+    white-space: normal;
+    /* Allow wrapping by default for data */
+  }
+
+  /* Sticky manufacturer column removed per user request */
+
+  /* Adjust widths for mobile */
+  .th-rank,
+  .dashboard-table td:nth-child(1) {
+    width: 25px;
+  }
+
+  .th-manufacturer,
+  .dashboard-table td:nth-child(2) {
+    min-width: 80px;
+    max-width: 100px;
+    /* Remove truncation to allow wrapping */
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+  }
+
+  .th-product,
+  .dashboard-table td:nth-child(3) {
+    min-width: 70px;
+    max-width: 90px;
+    /* Slightly wider to fit "Product" header */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* Keep product on one line to truncate */
+  }
+
+  .th-year,
+  .dashboard-table td:last-child {
+    width: 40px;
+  }
+
+  .th-metric,
+  .dashboard-table td:nth-child(n+4):nth-last-child(n+2) {
+    min-width: 60px;
+  }
 }
 
 .metric-cell {
@@ -238,7 +283,9 @@
 }
 
 .metric-cell[data-tooltip]:hover::after,
-.metric-cell[data-tooltip]:focus::after {
+.metric-cell[data-tooltip]:focus::after,
+.product-cell[data-tooltip]:hover::after,
+.product-cell[data-tooltip]:focus::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 100%;
@@ -257,7 +304,9 @@
 }
 
 .metric-cell[data-tooltip]:hover::before,
-.metric-cell[data-tooltip]:focus::before {
+.metric-cell[data-tooltip]:focus::before,
+.product-cell[data-tooltip]:hover::before,
+.product-cell[data-tooltip]:focus::before {
   content: '';
   position: absolute;
   bottom: 100%;
