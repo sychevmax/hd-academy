@@ -28,7 +28,7 @@ Originally, this project used **Azure SQL Database**. However, to optimize costs
 
 ### Prerequisites
 
-*   Java 17 SDK
+*   Java 21 SDK
 *   Maven (wrapper included)
 *   PostgreSQL database (or connection string to Supabase)
 

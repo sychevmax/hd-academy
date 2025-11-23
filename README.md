@@ -24,7 +24,7 @@
 This project mimics a modern enterprise stack:
 
 *   **Frontend**: React.js (SPA)
-*   **Backend**: Java 17, Spring Boot 3 (Microservice architecture)
+*   **Backend**: Java 21, Spring Boot 3 (Microservice architecture)
 *   **Data Processing**: Python (Pandas) for ETL pipelines
 *   **Database**: PostgreSQL (Supabase) - *Migrated from Azure SQL for cost optimization*
 *   **CI/CD**: GitHub Actions
