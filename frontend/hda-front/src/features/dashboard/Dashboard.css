@@ -230,3 +230,51 @@
   /* Sticky first column for better mobile experience if desired, 
      but user just asked for compact view. Let's stick to compact. */
 }
+
+.metric-cell {
+  cursor: help;
+  /* Indicate tooltip availability */
+  position: relative;
+}
+
+.metric-cell[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  pointer-events: none;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.metric-cell[data-tooltip]:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #333;
+  margin-bottom: -5px;
+  z-index: 1000;
+}
+
+.metric-improvement {
+  color: #16a34a;
+  /* Green-600 */
+  font-weight: 600;
+}
+
+.metric-decline {
+  color: #dc2626;
+  /* Red-600 */
+  font-weight: 600;
+}

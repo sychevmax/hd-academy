@@ -113,6 +113,22 @@ const DashboardPage = () => {
         return sortConfig.direction === 'ascending' ? <span className="sort-indicator">↑</span> : <span className="sort-indicator">↓</span>;
     };
 
+    // Create a lookup map for previous year data
+    const dataMap = useMemo(() => {
+        const map = new Map();
+        data.forEach(item => {
+            const key = `${item.manufacturer}-${item.product_type}-${item.year}`;
+            map.set(key, item);
+        });
+        return map;
+    }, [data]);
+
+    const getPrevYearData = (item) => {
+        const prevYear = parseInt(item.year) - 1;
+        const key = `${item.manufacturer}-${item.product_type}-${prevYear}`;
+        return dataMap.get(key);
+    };
+
     if (loading) return <div className="dashboard-loading">Loading market data...</div>;
     if (error) return <div className="dashboard-error">{error}</div>;
 
@@ -178,18 +194,45 @@ const DashboardPage = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {sortedData.map((item, index) => (
-                            <tr key={index}>
-                                <td>{index + 1}</td>
-                                <td>{item.manufacturer}</td>
-                                <td>{item.product_type}</td>
-                                <td>{item.year}</td>
-                                <td>{item.acceptance_rate}</td>
-                                <td>{item.claims_frequency}</td>
-                                <td>{item.complaints_rate}</td>
-                                <td>{item.avg_payout || 'N/A'}</td>
-                            </tr>
-                        ))}
+                        {sortedData.map((item, index) => {
+                            const prevItem = getPrevYearData(item);
+                            return (
+                                <tr key={index}>
+                                    <td>{index + 1}</td>
+                                    <td>{item.manufacturer}</td>
+                                    <td>{item.product_type}</td>
+                                    <td>{item.year}</td>
+                                    <MetricCell
+                                        value={item.acceptance_rate}
+                                        mid={item.acceptance_rate_mid}
+                                        prevValue={prevItem?.acceptance_rate}
+                                        prevMid={prevItem?.acceptance_rate_mid}
+                                        direction="higherIsBetter"
+                                    />
+                                    <MetricCell
+                                        value={item.claims_frequency}
+                                        mid={item.claims_frequency_mid}
+                                        prevValue={prevItem?.claims_frequency}
+                                        prevMid={prevItem?.claims_frequency_mid}
+                                        direction="lowerIsBetter"
+                                    />
+                                    <MetricCell
+                                        value={item.complaints_rate}
+                                        mid={item.complaints_rate_mid}
+                                        prevValue={prevItem?.complaints_rate}
+                                        prevMid={prevItem?.complaints_rate_mid}
+                                        direction="lowerIsBetter"
+                                    />
+                                    <MetricCell
+                                        value={item.avg_payout}
+                                        mid={item.avg_payout_mid}
+                                        prevValue={prevItem?.avg_payout}
+                                        prevMid={prevItem?.avg_payout_mid}
+                                        direction="lowerIsBetter"
+                                    />
+                                </tr>
+                            );
+                        })}
                     </tbody>
                 </table>
             </div>
@@ -198,6 +241,35 @@ const DashboardPage = () => {
                 <p><strong>Note:</strong> Data source: FCA General Insurance Value Measures. "Advantage Insurance Company Limited" represents Hastings Direct.</p>
             </div>
         </div>
+    );
+};
+
+const MetricCell = ({ value, mid, prevValue, prevMid, direction }) => {
+    if (!value) return <td>N/A</td>;
+
+    let className = 'metric-cell';
+    let tooltip = null;
+
+    if (prevMid !== undefined && mid !== undefined) {
+        const diff = mid - prevMid;
+        const isImprovement = direction === 'higherIsBetter' ? diff > 0 : diff < 0;
+        const isDecline = direction === 'higherIsBetter' ? diff < 0 : diff > 0;
+
+        if (isImprovement) className += ' metric-improvement';
+        if (isDecline) className += ' metric-decline';
+
+        tooltip = `Previous Year: ${prevValue}`;
+    }
+
+    const props = { className };
+    if (tooltip) {
+        props['data-tooltip'] = tooltip;
+    }
+
+    return (
+        <td {...props}>
+            {value}
+        </td>
     );
 };
 
