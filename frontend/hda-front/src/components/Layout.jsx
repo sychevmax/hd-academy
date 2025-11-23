@@ -1,10 +1,22 @@
 import React, { useState } from 'react';
 import './layout.css';
 import logo from '../logo.svg';
+import useIsMobile from '../hooks/useIsMobile';
 
 export default function Layout({ sidebar, children }) {
+  const isMobile = useIsMobile();
   // Start collapsed on small screens to show content first
-  const [collapsed, setCollapsed] = useState(() => typeof window !== 'undefined' && window.innerWidth <= 880);
+  const [collapsed, setCollapsed] = useState(isMobile);
+
+  const handleSidebarClick = (e) => {
+    // Check if the click originated from a button or link
+    // This allows clicking on empty space or headers without collapsing
+    if (e.target.closest('button') || e.target.closest('a')) {
+      if (isMobile) {
+        setCollapsed(true);
+      }
+    }
+  };
 
   return (
     <div className={`layout ${collapsed ? 'collapsed' : ''}`}>
@@ -37,7 +49,7 @@ export default function Layout({ sidebar, children }) {
           {/* Heading directly under the logo on the same white background */}
           <div className="brand-heading" aria-hidden="true">Academy</div>
         </div>
-        <div className="sidebar-content">
+        <div className="sidebar-content" onClick={handleSidebarClick}>
           {sidebar}
         </div>
         <div className="sidebar-footer">UK Insurance Portal</div>
