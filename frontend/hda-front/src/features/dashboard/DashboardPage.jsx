@@ -183,14 +183,14 @@ const DashboardPage = () => {
                 <table className="dashboard-table">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th onClick={() => requestSort('manufacturer')}>Manufacturer {getSortIndicator('manufacturer')}</th>
-                            <th onClick={() => requestSort('product_type')}>Product Type {getSortIndicator('product_type')}</th>
-                            <th onClick={() => requestSort('year')}>Year {getSortIndicator('year')}</th>
-                            <th onClick={() => requestSort('acceptance_rate')}>Claims Acceptance Rate {getSortIndicator('acceptance_rate')}</th>
-                            <th onClick={() => requestSort('claims_frequency')}>Claims Frequency {getSortIndicator('claims_frequency')}</th>
-                            <th onClick={() => requestSort('complaints_rate')}>Complaints Rate {getSortIndicator('complaints_rate')}</th>
-                            <th onClick={() => requestSort('avg_payout')}>Avg Payout {getSortIndicator('avg_payout')}</th>
+                            <th className="th-rank">#</th>
+                            <th className="th-manufacturer" onClick={() => requestSort('manufacturer')}>Manufacturer {getSortIndicator('manufacturer')}</th>
+                            <th className="th-product" onClick={() => requestSort('product_type')}>Product {getSortIndicator('product_type')}</th>
+                            <th className="th-metric" onClick={() => requestSort('acceptance_rate')}>Acceptance % {getSortIndicator('acceptance_rate')}</th>
+                            <th className="th-metric" onClick={() => requestSort('claims_frequency')}>Freq. % {getSortIndicator('claims_frequency')}</th>
+                            <th className="th-metric" onClick={() => requestSort('complaints_rate')}>Complaints % {getSortIndicator('complaints_rate')}</th>
+                            <th className="th-metric" onClick={() => requestSort('avg_payout')}>Avg Payout {getSortIndicator('avg_payout')}</th>
+                            <th className="th-year" onClick={() => requestSort('year')}>Year {getSortIndicator('year')}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -201,8 +201,7 @@ const DashboardPage = () => {
                                 <tr key={index}>
                                     <td>{index + 1}</td>
                                     <td>{item.manufacturer}</td>
-                                    <td>{item.product_type}</td>
-                                    <td>{item.year}</td>
+                                    <td className="product-cell" data-tooltip={item.product_type} tabIndex="0">{item.product_type}</td>
                                     <MetricCell
                                         value={item.acceptance_rate}
                                         mid={item.acceptance_rate_mid}
@@ -235,6 +234,7 @@ const DashboardPage = () => {
                                         direction="lowerIsBetter"
                                         prevYear={prevYear}
                                     />
+                                    <td>{item.year}</td>
                                 </tr>
                             );
                         })}
