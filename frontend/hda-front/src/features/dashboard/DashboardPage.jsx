@@ -196,6 +196,7 @@ const DashboardPage = () => {
                     <tbody>
                         {sortedData.map((item, index) => {
                             const prevItem = getPrevYearData(item);
+                            const prevYear = parseInt(item.year) - 1;
                             return (
                                 <tr key={index}>
                                     <td>{index + 1}</td>
@@ -208,6 +209,7 @@ const DashboardPage = () => {
                                         prevValue={prevItem?.acceptance_rate}
                                         prevMid={prevItem?.acceptance_rate_mid}
                                         direction="higherIsBetter"
+                                        prevYear={prevYear}
                                     />
                                     <MetricCell
                                         value={item.claims_frequency}
@@ -215,6 +217,7 @@ const DashboardPage = () => {
                                         prevValue={prevItem?.claims_frequency}
                                         prevMid={prevItem?.claims_frequency_mid}
                                         direction="lowerIsBetter"
+                                        prevYear={prevYear}
                                     />
                                     <MetricCell
                                         value={item.complaints_rate}
@@ -222,6 +225,7 @@ const DashboardPage = () => {
                                         prevValue={prevItem?.complaints_rate}
                                         prevMid={prevItem?.complaints_rate_mid}
                                         direction="lowerIsBetter"
+                                        prevYear={prevYear}
                                     />
                                     <MetricCell
                                         value={item.avg_payout}
@@ -229,6 +233,7 @@ const DashboardPage = () => {
                                         prevValue={prevItem?.avg_payout}
                                         prevMid={prevItem?.avg_payout_mid}
                                         direction="lowerIsBetter"
+                                        prevYear={prevYear}
                                     />
                                 </tr>
                             );
@@ -244,7 +249,7 @@ const DashboardPage = () => {
     );
 };
 
-const MetricCell = ({ value, mid, prevValue, prevMid, direction }) => {
+const MetricCell = ({ value, mid, prevValue, prevMid, direction, prevYear }) => {
     if (!value) return <td>N/A</td>;
 
     let className = 'metric-cell';
@@ -258,12 +263,13 @@ const MetricCell = ({ value, mid, prevValue, prevMid, direction }) => {
         if (isImprovement) className += ' metric-improvement';
         if (isDecline) className += ' metric-decline';
 
-        tooltip = `Previous Year: ${prevValue}`;
+        tooltip = `${prevYear}: ${prevValue}`;
     }
 
     const props = { className };
     if (tooltip) {
         props['data-tooltip'] = tooltip;
+        props['tabIndex'] = 0; // Make focusable for mobile tap
     }
 
     return (

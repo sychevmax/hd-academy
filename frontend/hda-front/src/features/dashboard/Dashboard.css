@@ -237,7 +237,8 @@
   position: relative;
 }
 
-.metric-cell[data-tooltip]:hover::after {
+.metric-cell[data-tooltip]:hover::after,
+.metric-cell[data-tooltip]:focus::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: 100%;
@@ -255,7 +256,8 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.metric-cell[data-tooltip]:hover::before {
+.metric-cell[data-tooltip]:hover::before,
+.metric-cell[data-tooltip]:focus::before {
   content: '';
   position: absolute;
   bottom: 100%;
