@@ -19,13 +19,13 @@ export default function AboutPage() {
         </p>
       </section>
 
-        <section className="about-section">
-            <div className="links-grid">
-                <a href="https://github.com/sychevmax/hd-academy" target="_blank" rel="noopener noreferrer" className="link-btn">
-                    View Source Code (GitHub)
-                </a>
-            </div>
-        </section>
+      <section className="about-section">
+        <div className="links-grid">
+          <a href="https://github.com/sychevmax/hd-academy" target="_blank" rel="noopener noreferrer" className="link-btn">
+            View Source Code (GitHub)
+          </a>
+        </div>
+      </section>
 
       <section className="about-section">
         <h2>Tech Stack & Architecture</h2>
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <div className="tech-card">
             <h3>Backend</h3>
             <ul>
-              <li><strong>Java 17</strong> & <strong>Spring Boot 3</strong></li>
+              <li><strong>Java 21</strong> & <strong>Spring Boot 3</strong></li>
               <li>Microservice Architecture principles</li>
               <li>RESTful API design</li>
               <li><strong>Azure SQL / PostgreSQL</strong> (Supabase)</li>
