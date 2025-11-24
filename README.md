@@ -1,7 +1,7 @@
 # Hastings Direct Academy (HD Academy)
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/sychevmax/hd-academy/deploy-appservice.yml?label=Azure%20Deployment)
-![Java](https://img.shields.io/badge/Java-17-orange)
+![Build Status](https://img.shields.io/github/actions/workflow/status/sychevmax/hd-academy/deploy-appservice.yml?branch=prod&label=Azure%20Deployment)
+![Java](https://img.shields.io/badge/Java-21-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-green)
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Python](https://img.shields.io/badge/Python-Pandas-yellow)
