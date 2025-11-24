@@ -22,7 +22,9 @@ public class SpaWebConfig implements WebMvcConfigurer {
         // by SpaErrorViewResolver (404 -> forward:/index.html).
         registry.addViewController("/").setViewName("forward:/index.html");
         // Explicitly forward the new SPA route to index.html to avoid static resource 404/500
-        registry.addViewController("/ask-ai").setViewName("forward:/index.html");
         registry.addViewController("/dashboard").setViewName("forward:/index.html");
+        registry.addViewController("/ask-ai").setViewName("forward:/index.html");
+        registry.addViewController("/glossary").setViewName("forward:/index.html");
+        registry.addViewController("/about").setViewName("forward:/index.html");
     }
 }
